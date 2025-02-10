@@ -10,17 +10,19 @@ body {
 .hero-text {
   padding-top: 108px;
   padding-bottom: 112px;
+  width: 328px;
+  display: block;
   margin-inline: auto;
-  padding-inline: 23px;
+
 
   h1 {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 1.29px;
-    text-align: center;
     color: rgba(255, 255, 255, 1);
     margin-top: 16px;
+    text-align: center;
   }
 
   h2 {
@@ -28,9 +30,9 @@ body {
     font-size: 14px;
     line-height: 19.12px;
     letter-spacing: 10px;
-    text-align: center;
     color: rgba(255, 255, 255, 1);
     opacity: 0.5;
+    text-align: center;
   }
 
   p {
@@ -38,9 +40,25 @@ body {
     font-size: 15px;
     line-height: 25px;
     letter-spacing: 0px;
-    text-align: center;
     color: rgba(255, 255, 255, 1);
     opacity: 75%;
     margin-top: 24px;
+    text-align: center;
+
+  }
+
+  button {
+    margin-top: 28px;
+    text-align: center;
+    background-color: rgba(216, 125, 74, 1);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17.76px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 1);
+    padding: 15px 31px;
+    border: 1px solid transparent;
+    display: block;
+    margin-inline: auto;
   }
 }
