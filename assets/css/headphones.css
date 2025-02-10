@@ -96,3 +96,76 @@ body {
   }
 }
 
+.product-headphones {
+  margin: 64px 24px 120px;
+  .product-headphones-item img {
+    border-radius: 8px;
+    margin-bottom: 32px;
+  }
+  h4 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.12px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: #D87D4A;
+    margin-bottom: 24px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38.25px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    opacity: 0.5;
+    margin-bottom: 24px;
+  }
+  a {
+    text-decoration: none;
+    color: #FFF;
+    background: #D87D4A;
+    width: 160px;
+    padding-block: 15px;
+    margin-inline: auto;
+    display: block;
+    text-align: center;
+  }
+}
+
+.main-content {
+  margin-inline: 24px;
+  margin-bottom: 120px;
+  .content-text {
+    text-align: center;
+    img {
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 38.25px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+      span {
+        color: #D87D4A;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      opacity: 0.5;
+    }
+  }
+}
