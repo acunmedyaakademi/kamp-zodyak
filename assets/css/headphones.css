@@ -275,3 +275,101 @@ body {
       padding: 0;
   }
 }
+
+@media (width > 425px) {
+  .header {
+    .menu__btn {
+      left: 39px;
+    }
+    padding-inline: 39px;
+    > .logo {
+      margin-left: 42px;
+      margin-right: auto;
+    }
+  }
+
+  .header-hero {
+    padding-block: 97px;
+    h2 {
+      font-size: 40px;
+    }
+  }
+
+
+  .product-headphones {
+    margin: 120px 39px;
+    .product-headphones-text {
+      margin-inline: 60px;
+    }
+    .product-headphones-item img {
+      width: 100%;
+      height: 352px;
+    }
+    h2 {
+      margin-bottom: 16px;
+    }
+    h3 {
+      font-size: 40px;
+      margin-bottom: 32px;
+    }
+  }
+  .categories {
+    flex-direction: row;
+    margin-inline: 39px;
+    gap: 10px;
+    margin-top: 180px;
+  }
+  .main-content {
+    margin-inline: 39px;
+    .content-text {
+      img {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 63px;
+      }
+      h3 {
+        font-size: 40px;
+        letter-spacing: 1.43px;
+        line-height: 44px;
+      }
+      p {
+        margin-inline: 57px;
+      }
+    }
+  }
+}
+@media (width > 768px) {
+  .header {
+     a {
+      order: 3;
+     }
+    .logo {
+      order: 1;
+      margin-left: 0;
+    }
+    .hamburger-menu {
+      order: 2;
+
+      #menu__toggle , .menu__btn {
+        display: none;
+      }
+      .menu__box {
+        position: static; /* Menü normal akışa yerleşir */
+        width: auto; /* Menü genişliği içeriğe göre ayarlanır */
+        padding: 0; /* Padding kaldırılır */
+        box-shadow: none; /* Gölgeyi kaldırır */
+        display: flex; /* Flex ile menüyü yatay hale getirebiliriz */
+        flex-direction: row; /* Menü öğeleri yatayda sıralanır */
+        justify-content: flex-start; /* Sol tarafa hizalar */
+        gap: 34px;
+        background: inherit;
+        .menu__item {
+          color: #FFF;
+        }
+      }
+    }
+
+
+  
+  }
+}
