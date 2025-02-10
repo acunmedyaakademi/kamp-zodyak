@@ -372,3 +372,8 @@ li {
     background-color: #CFD8DC;
   }
 }
+@media(width > 425px) {
+  .product-headphones {
+    margin-top: 120px;
+  }
+}
