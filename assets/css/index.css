@@ -1,0 +1,46 @@
+body {
+  font-family: "Manrope", serif;
+}
+
+.hero {
+  background: url(../product-xx99-mark-two-headphones/hero-background.png) no-repeat center;
+  background-size: cover;
+}
+
+.hero-text {
+  padding-top: 108px;
+  padding-bottom: 112px;
+  margin-inline: auto;
+  padding-inline: 23px;
+
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.29px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 16px;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.12px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.5;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 75%;
+    margin-top: 24px;
+  }
+}
