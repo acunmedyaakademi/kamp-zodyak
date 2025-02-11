@@ -122,8 +122,6 @@ body {
   }
 }
 
-
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -302,7 +300,15 @@ body {
   }
 }
 
+.products {
+  margin-inline: auto;
+  display: grid;
+  justify-items: center;
+}
+
 .product-zx9 {
+  width: 350px;
+  border-radius: 9px;
   padding-top: 55px;
   background: rgba(216, 125, 74, 1);
   background-image: url(../home/desktop/pattern-circles.svg);
@@ -339,7 +345,7 @@ body {
 
   }
 
-  button{
+  button {
     margin-top: 28px;
     text-align: center;
     background-color: rgba(0, 0, 0, 1);
@@ -355,4 +361,61 @@ body {
     display: block;
     margin-inline: auto;
   }
+}
+
+.product-zx7 {
+  position: relative;
+  width: 350px;
+  border-radius: 9px;
+  height: 320;
+  margin-top: 24px;
+
+  .product-zx7-text {
+    position: absolute;
+    top: 85px;
+    left: 35px;
+  }
+
+  h3 {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38.25px;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  button {
+    margin-top: 32px;
+    background-color: transparent;
+    padding: 15px 29px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17.76px;
+    letter-spacing: 1px;
+  }
+
+  img {
+    width: 350px;
+    border-radius: 9px;
+  }
+}
+
+.product-zxd9 {
+  img {
+    margin-top: 24px;
+    width: 350px;
+    border-radius: 9px;
+  }
+
+  .product-yx1-text {
+    width: 327px;
+    height: 200px;
+    margin-top: 24px;
+    background-color: rgba(241, 241, 241, 1);
+    
+  }
+ .text-wrap{
+  padding-top: 41px;
+ }
 }
