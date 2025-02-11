@@ -41,6 +41,17 @@
       </div>
 
     </div>
+    <div class="hero-desktop">
+      <img src="assets/products-img/hero-desktop.png" alt="">
+      <div class="hero-text">
+        <h2>NEW PRODUCT</h2>
+        <h1>XX99 Mark II <br>
+          HeadphoneS</h1>
+        <p>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
+        </p>
+        <button>SEE PRODUCT</button>
+      </div>
+    </div>
     <div class="categories">
       <div class="category-item">
         <img src="./assets/categories-img-mobile/headphones.svg" alt="Headphones Img">
@@ -81,6 +92,13 @@
           <button href="#">See Product</button>
         </div>
       </div>
+      <div class="product-zx7-desktop">
+        <img src="./assets/products-img/desktop-speakers.png">
+        <div class="product-zx7-text">
+          <h3>ZX7 SPEAKER</h3>
+          <button href="#">See Product</button>
+        </div>
+      </div>
       <div class="product-zxd9">
         <img src="./assets/products-img/headphones.png" alt="">
         <div class="product-yx1-text">
@@ -94,16 +112,17 @@
     <div class="main-content">
       <div class="content-text">
         <picture>
+          <!-- Desktop için -->
+          <source srcset="./assets/shared/desktop/image-best-gear.jpg" media="(width > 768px)">
           <!-- Tablet için -->
-          <source srcset="./assets/shared/tablet/image-best-gear.jpg" media="(min-width: 768px)">
+          <source srcset="./assets/shared/tablet/image-best-gear.jpg" media="(width > 425px)">
           <!-- Mobil için varsayılan -->
           <img src="./assets/shared/mobile/image-best-gear.jpg" alt="Best Gear Image">
         </picture>
-        <h3>Bringing you the <span>best</span> audio gear</h3>
-        <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones,
-          speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to
-          browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who
-          make Audiophile the best place to buy your portable audio equipment.</p>
+        <div>
+          <h3>Bringing you the <span>best</span> audio gear</h3>
+          <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+        </div>
       </div>
     </div>
     <div class="footer">
