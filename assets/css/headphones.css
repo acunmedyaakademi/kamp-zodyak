@@ -281,7 +281,7 @@ body {
   }
 }
 
-@media (width > 425px) {
+@media (width > 525px) {
   .header {
     .menu__btn {
       left: 39px;
@@ -342,6 +342,33 @@ body {
       }
     }
   }
+  .footer {
+    padding-inline: 40px;
+    text-align: left;
+
+    >img {
+      display: block;
+      margin-left: 0px;
+    }
+
+    a>img {
+      display: block;
+      margin-left: 0px;
+      padding-bottom: 32px;
+    }
+
+    ul {
+      display: flex;
+      gap: 34px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  
 }
 @media (min-width: 768px) {
   body {
@@ -432,6 +459,7 @@ body {
       picture {
         width: 540px;
         height: 560px;
+        order: 1;
         img, source {
           height: auto;
         }

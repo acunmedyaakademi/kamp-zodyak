@@ -27,7 +27,7 @@
           <li><a href="/assets/pages/earphones.html" class="menu__item">Earphones</a></li>
         </ul>
       </div>
-      <a href="/"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
+      <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
       <a href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
     <div class="hero">
@@ -43,55 +43,72 @@
     </div>
     <div class="categories">
       <div class="category-item">
-        <img src="" alt="Headphones Img">
+        <img src="./assets/categories-img-mobile/headphones.svg" alt="Headphones Img">
         <h3>Headphones</h3>
         <a href="#">Shop</a>
       </div>
       <div class="category-item">
-        <img src="" alt="Speakers Img">
+        <img src="./assets/categories-img-mobile/speakers.svg" alt="Speakers Img">
         <h3>Speakers</h3>
         <a href="#">Shop</a>
       </div>
       <div class="category-item">
-        <img src="" alt="Earphones Img">
+        <img src="./assets/categories-img-mobile/earphones.svg" alt="Earphones Img">
         <h3>Earphones</h3>
         <a href="#">Shop</a>
       </div>
     </div>
     <div class="products">
       <div class="product-zx9">
-        <img src="" alt="">
+        <img src="./assets/products-img/speakers.svg" alt="">
         <div class="product-zx9-text">
-          <h2>ZX9 Speaker</h2>
-          <p>Text</p>
-          <a href="#">See Product</a>
+          <h2>ZX9 <br>Speaker</h2>
+          <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
+          <button href="#">See Product</button>
         </div>
       </div>
       <div class="product-zx7">
-        <img src="" alt="">
+        <img src="./assets/products-img/speakers-table.png" alt="">
         <div class="product-zx7-text">
-          <h3>ZX9 Speaker</h3>
-          <a href="#">See Product</a>
+          <h3>ZX7 SPEAKER</h3>
+          <button href="#">See Product</button>
         </div>
       </div>
-      <div class="product-zx9">
-        <img src="" alt="">
+      <div class="product-zx7-tablet">
+        <img src="./assets/products-img/tablet-speakers.png" alt="">
+        <div class="product-zx7-text">
+          <h3>ZX7 SPEAKER</h3>
+          <button href="#">See Product</button>
+        </div>
+      </div>
+      <div class="product-zxd9">
+        <img src="./assets/products-img/headphones.png" alt="">
         <div class="product-yx1-text">
-          <h3>YX1 Earphones</h3>
-          <a href="#">See Product</a>
+          <div class="text-wrap">
+            <h3>YX1 Earphones</h3>
+            <button href="#">See Product</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="main-content">
       <div class="content-text">
-        <h3>Başlık</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, labore.</p>
+        <picture>
+          <!-- Tablet için -->
+          <source srcset="./assets/shared/tablet/image-best-gear.jpg" media="(min-width: 768px)">
+          <!-- Mobil için varsayılan -->
+          <img src="./assets/shared/mobile/image-best-gear.jpg" alt="Best Gear Image">
+        </picture>
+        <h3>Bringing you the <span>best</span> audio gear</h3>
+        <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones,
+          speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to
+          browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who
+          make Audiophile the best place to buy your portable audio equipment.</p>
       </div>
-      <img src="" alt="">
     </div>
     <div class="footer">
       <img src="./assets/logos/top-orange-line.svg" alt="">
-      <a href="/"><img src="./assets/shared/desktop/logo.svg "></a>
+      <a href="/"><img src="./assets/shared/desktop/logo.svg" alt="Company Logo"></a>
       <div class="navbar">
         <ul>
           <li>Home</li>
@@ -101,14 +118,19 @@
         </ul>
       </div>
       <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound
-        specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility -
+        specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility
+        -
         we’re open 7 days a week.
       </p>
-      <span>Copyright 2021. All Rights Reserved</span>
-      <div class="social-media">
-        <a href="#"><img src="./assets/logos/facebook-logo.svg" alt="facebook icon"></a>
-        <a href="#"><img src="./assets/logos/twitter-logo.svg" alt="twitter icon"></a>
-        <a href="#"><img src="./assets/logos/instagram-logo.svg" alt="instagram icon"></a>
+      <div class="footer-bottom">
+        <div>
+          <span>Copyright 2021. All Rights Reserved</span>
+        </div>
+        <div class="social-media">
+          <a href="#"><img src="./assets/logos/facebook-logo.svg" alt="facebook icon"></a>
+          <a href="#"><img src="./assets/logos/twitter-logo.svg" alt="twitter icon"></a>
+          <a href="#"><img src="./assets/logos/instagram-logo.svg" alt="instagram icon"></a>
+        </div>
       </div>
     </div>
   </div>
