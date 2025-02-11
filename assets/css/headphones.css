@@ -7,6 +7,8 @@ body {
   align-items: center;
   background: #000000;
   padding: 32px 24px 32px 7px;
+  /* border-bottom: 1px solid #1B1B1B; */
+
 
   #menu__toggle {
     opacity: 0;
@@ -81,9 +83,12 @@ body {
     background-color: #CFD8DC;
   }
 }
+.custom-hr {
+  border: none;
+
+}
 .header-hero {
   background: #000;
-  border-top: 1px solid #1B1B1B;
   padding-block: 32px;
   
   h2 {
@@ -338,14 +343,23 @@ body {
     }
   }
 }
-@media (width > 768px) {
+@media (min-width: 768px) {
+  body {
+    min-width: 1110px;
+  }
   .header {
+    width: 100%;
+    padding-inline: 165px;
      a {
       order: 3;
+      display: block;
+      
      }
     .logo {
+      display: block;
       order: 1;
       margin-left: 0;
+      margin-right: 0;
     }
     .hamburger-menu {
       order: 2;
@@ -354,13 +368,13 @@ body {
         display: none;
       }
       .menu__box {
-        position: static; /* Menü normal akışa yerleşir */
-        width: auto; /* Menü genişliği içeriğe göre ayarlanır */
-        padding: 0; /* Padding kaldırılır */
-        box-shadow: none; /* Gölgeyi kaldırır */
-        display: flex; /* Flex ile menüyü yatay hale getirebiliriz */
-        flex-direction: row; /* Menü öğeleri yatayda sıralanır */
-        justify-content: flex-start; /* Sol tarafa hizalar */
+        position: static; 
+        width: auto; 
+        padding: 0; 
+        box-shadow: none; 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-start; 
         gap: 34px;
         background: inherit;
         .menu__item {
@@ -368,8 +382,70 @@ body {
         }
       }
     }
+  }
+  .product-headphones{
+    display: flex;
+    justify-content: center;
+    margin: 160px 165px;
+    gap: 125px;
 
-
+    .product-headphones-item, picture {
+      width: 540px;
+      height: 560px;
+      img, source {
+        height: auto;
+      }
+    }
+    .product-headphones-text {
+      margin: 0;
+      width: 445px;
+      height: 343px;
+      padding-block: 100px;
+      h4, h3, p {
+        text-align: left;
+      }
+      a {
+        margin: 0;
+      }
+    }
   
+    
+  }
+  .order {
+    .product-headphones-item {
+      order: 2;
+    }
+  }
+  .categories {
+    width: 1110px;
+    height: auto;
+    margin-inline: auto;
+  }
+  .main-content {
+    .content-text {
+      display: flex;
+      justify-content: center;
+      margin: 160px 165px;
+      gap: 125px;
+      width: 1110px;
+      margin-inline: auto;
+      picture {
+        width: 540px;
+        height: 560px;
+        img, source {
+          height: auto;
+        }
+      }
+      > div {
+        margin: 0;
+        width: 445px;
+        height: 295px;
+        padding-block:100px ;
+        h3, p {
+          text-align: left;
+          margin-inline: 0;
+        }
+      }
+    }
   }
 }
