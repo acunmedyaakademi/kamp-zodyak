@@ -439,3 +439,112 @@ body {
     letter-spacing: 1px;
   }
 }
+
+/* media start here */
+/* tablet version start here */
+@media (width > 425px) {
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+  }
+  .logo{
+    margin-right:auto;
+    margin-left: 42px;
+  }
+
+  .hero {
+    background: url(../product-xx99-mark-two-headphones/hero-background.png) no-repeat center;
+    background-size:cover;
+    height: 650px;
+    width: 100%;
+  }
+  
+  .hero-text {
+    padding-bottom: 58px;
+    width: 528px;
+    display: block;
+    margin-inline: auto;
+    height: 550px;
+    h1 {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 58px;
+      letter-spacing: 2px;
+      color: rgba(255, 255, 255, 1);
+      margin-top: 16px;
+      text-align: center;
+    }
+    p{
+      padding-inline: 60px;
+    }
+    button {
+      margin-top: 40px;
+    }
+  }
+
+  .categories {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    padding-inline: 40px;
+  }
+  .product-zx9 {
+    width: 350px;
+    border-radius: 9px;
+    padding-top: 55px;
+    background: rgba(216, 125, 74, 1);
+    background-image: url(../home/desktop/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 558px;
+    height: 600px;
+  
+    img {
+      display: block;
+      margin-inline: auto;
+    }
+  
+    h2 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 40px;
+      letter-spacing: 1.29px;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+      margin-top: 12px;
+    }
+  
+    p {
+      font-family: Manrope;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+      margin-top: 24px;
+      padding-inline: 23px;
+  
+    }
+  
+    button {
+      margin-top: 28px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 1);
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 17.76px;
+      letter-spacing: 1px;
+      color: rgba(255, 255, 255, 1);
+      padding: 15px 31px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      margin-top: 39px;
+      display: block;
+      margin-inline: auto;
+    }
+  }
+}
