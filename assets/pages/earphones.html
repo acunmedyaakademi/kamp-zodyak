@@ -41,7 +41,15 @@
 
     <div class="product-headphones">
       <div class="product-headphones-item">
-        <img src="../product-yx1-earphones/mobile/image-product.jpg" alt="">
+        <picture>
+          <!-- Desktop için -->
+          <source srcset="../product-yx1-earphones/desktop/image-category-page-preview.jpg" media="(min-width: 1024px)">
+          <!-- Tablet için -->
+          <source srcset="../product-yx1-earphones/tablet/image-category-page-preview.jpg" media="(min-width: 768px)">
+          <!-- Mobil için varsayılan -->
+          <img src="../product-yx1-earphones/mobile/image-product.jpg" alt="">
+        </picture>
+        
         <div class="product-headphones-text">
           <h4>NEW PRODUCT</h4>
           <h3> YX1 WIRELESS
@@ -60,6 +68,7 @@
       </div>
       <div class="category-item">
         <img src="/assets/categories-img-mobile/speakers.svg" alt="Speakers Img">
+        
         <h3>Speakers</h3>
         <a href="#">Shop<span>></span></a>
       </div>
