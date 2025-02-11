@@ -335,7 +335,16 @@
 
     .footer {
       padding-inline: 40px;
-
+      text-align: left;
+      >img {
+        display: block;
+        margin-left: 0px;
+      }
+      a  > img {
+        display: block;
+        margin-left: 0px;
+        padding-bottom: 32px;
+      }
       ul  {
         display: flex;
         gap: 34px;
