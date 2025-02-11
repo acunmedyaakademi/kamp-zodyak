@@ -440,6 +440,9 @@ body {
 /* Tablet Start */
 
 @media(min-width: 525px) {
+  body {
+    min-width: 1024px;
+  }
   .header {
     .menu__btn {
       left: 39px;
@@ -554,6 +557,140 @@ body {
       align-items: center;
       justify-content: space-between;
     }
+  }
+}
+@media(min-width: 1024px) {
+  body {
+    min-width: 1440px;
+  }
+  .header {
+    width: 100%;
+    padding-inline: 165px;
+    margin-bottom: 79px;
+     a {
+      order: 3;
+      display: block;
+      
+     }
+    .logo {
+      display: block;
+      order: 1;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .hamburger-menu {
+      order: 2;
+
+      #menu__toggle , .menu__btn {
+        display: none;
+      }
+      .menu__box {
+        position: static; 
+        width: auto; 
+        padding: 0; 
+        box-shadow: none; 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-start; 
+        gap: 34px;
+        background: inherit;
+        .menu__item {
+          color: #FFF;
+        }
+      }
+    }
+  }
+  .product-detail {
+    width: 1110px;
+    margin-inline: auto;
+    a {
+      margin-left: 0;
+      
+    }
+    .product-detail-item {
+      margin-inline: 0;
+      width: 100%;
+      gap: 124px;
+      margin-top: 56px;
+      picture {
+        width: 540px;
+      }
+      .product-detail-text {
+        padding-block: 77px;
+      }
+    }
+
+  }
+  .product-features {
+    width: 1110px;
+    margin-inline: auto;
+    display: flex;
+    gap: 125px;
+    .box {
+      flex-direction: column;
+      margin-top: 0;
+    }
+
+  }
+  .product-detail-images {
+    width: 1110px;
+    margin-inline: auto;
+  }
+  .categories {
+    width: 1110px;
+    height: auto;
+    margin-inline: auto;
+  }
+  .main-content {
+    .content-text {
+      display: flex;
+      justify-content: center;
+      margin: 160px 165px;
+      gap: 125px;
+      width: 1110px;
+      margin-inline: auto;
+      picture {
+        width: 540px;
+        height: 560px;
+        order: 1;
+        img, source {
+          height: auto;
+        }
+      }
+      > div {
+        margin: 0;
+        width: 445px;
+        height: 295px;
+        padding-block:100px ;
+        h3, p {
+          text-align: left;
+          margin-inline: 0;
+        }
+      }
+    }
+  }
+  .container > h2 {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14px;
+    margin-bottom: 64px;
+
+  }
+  .product-also-like {
+    width: 1110px;
+    margin-inline: auto;
+
+  }
+  .footer {
+    padding-inline: 165px;
+    p {
+      max-width: 540px;
+    }
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
