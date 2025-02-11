@@ -14,6 +14,9 @@
 </head>
 
 <body>
+
+
+
   <div class="container-headphones">
 
     <div class="header">
@@ -34,7 +37,7 @@
     </div>
     <div class="header-hero">
       <h2>EARPHONES</h2>
-    </div> 
+    </div>
 
     <div class="product-headphones">
       <div class="product-headphones-item">
@@ -68,9 +71,18 @@
     </div>
     <div class="main-content">
       <div class="content-text">
-        <img src="/assets/shared/mobile/image-best-gear.jpg" alt="">
+        <picture>
+          <!-- Tablet için -->
+          <source srcset="../shared/tablet/image-best-gear.jpg" media="(min-width: 768px)">
+          <!-- Mobil için varsayılan -->
+          <img src="../shared/mobile/image-best-gear.jpg" alt="Best Gear Image">
+        </picture>
+        
         <h3>Bringing you the <span>best</span> audio gear</h3>
-        <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+        <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones,
+          speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to
+          browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who
+          make Audiophile the best place to buy your portable audio equipment.</p>
       </div>
     </div>
 
@@ -90,11 +102,15 @@
         -
         we’re open 7 days a week.
       </p>
-      <span>Copyright 2021. All Rights Reserved</span>
-      <div class="social-media">
-        <a href="#"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
-        <a href="#"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
-        <a href="#"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
+      <div class="footer-bottom">
+        <div>
+          <span>Copyright 2021. All Rights Reserved</span>
+        </div>
+        <div class="social-media">
+          <a href="#"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
+          <a href="#"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
+          <a href="#"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
+        </div>
       </div>
     </div>
   </div>
