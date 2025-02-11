@@ -345,7 +345,7 @@ body {
 }
 @media (min-width: 768px) {
   body {
-    min-width: 1110px;
+    min-width: 1440px;
   }
   .header {
     width: 100%;

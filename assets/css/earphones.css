@@ -321,7 +321,7 @@
   /*Footer css kismi bitti   */
 
 
-  @media (width >425px) {
+  @media (width >525px) {
 
     .categories {
       display: flex;
@@ -387,8 +387,9 @@
     }
   }
 
-  @media (width >768px) {
-    .menu__box {
-      display: block;
+  @media (min-width: 768px) {
+    body {
+      min-width: 1100px;
     }
+    
   }
