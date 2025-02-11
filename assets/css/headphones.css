@@ -281,7 +281,7 @@ body {
   }
 }
 
-@media (width > 525px) {
+@media (min-width: 525px) {
   .header {
     .menu__btn {
       left: 39px;
@@ -370,7 +370,7 @@ body {
   }
   
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   body {
     min-width: 1440px;
   }
