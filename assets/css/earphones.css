@@ -322,5 +322,28 @@
 
 
   @media (width >425px) {
-    
+
+    .categories {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .main-content {
+      padding-inline: 97px;
+    }
+
+    .footer {
+      padding-inline: 40px;
+
+      ul  {
+        display: flex;
+        gap: 34px;
+      }
+      .footer-bottom {
+        display: flex;
+        align-items: center ;
+        justify-content: space-between;
+      }
+    }
   }
