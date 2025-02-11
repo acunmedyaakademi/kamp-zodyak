@@ -28,19 +28,17 @@
       <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
       <a href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
+    <hr class="custom-hr">
     <div class="header-hero">
       <h2>HEADPHONES</h2>
     </div> 
     <div class="product-headphones">
       <div class="product-headphones-item">
-        <img 
-          src="/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg" 
-          alt="Headphones" 
-          srcset="
-            /assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg 425w,
-            /assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg 768w,
-            /assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg 1200w"
-          sizes="(max-width: 425px) 100vw, (max-width: 768px) 80vw, 50vw">
+        <picture>
+          <source srcset="/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg" media="(max-width: 768px)">
+          <source srcset="/assets/product-xx99-mark-two-headphones/tablet/image-product.jpg" media="(max-width: 425px)">
+          <img src="/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg" alt="">
+        </picture>
       </div>
       <div class="product-headphones-text">
         <h4>NEW PRODUCT</h4>
@@ -50,13 +48,13 @@
       </div>
        
     </div>
-    <div class="product-headphones">
+    <div class="product-headphones order">
       <div class="product-headphones-item">
-        <source srcset="/assets/product-xx99-mark-one-headphones/desktop/image-product.jpg" media="(max-width: 768px)">
-
-        <source srcset="/assets/product-xx99-mark-one-headphones/tablet/image-product.jpg" media="(max-width: 425px)">
-
-        <img src="/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg" alt="">
+        <picture>
+          <source srcset="/assets/product-xx99-mark-one-headphones/desktop/image-product.jpg" media="(max-width: 768px)">
+          <source srcset="/assets/product-xx99-mark-one-headphones/tablet/image-product.jpg" media="(max-width: 425px)">
+          <img src="/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg" alt="">
+        </picture>
       </div>
       <div class="product-headphones-text">
         <h4>NEW PRODUCT</h4>
@@ -67,7 +65,12 @@
     </div>
     <div class="product-headphones">
       <div class="product-headphones-item">
-        <img src="/assets/product-xx59-headphones/mobile/image-product.jpg" alt="">
+        <picture>
+          <source srcset="/assets/product-xx59-headphones/desktop/image-product.jpg" media="(max-width: 768px)">
+          <source srcset="/assets/product-xx59-headphones/tablet/image-product.jpg" media="(max-width: 425px)">
+          <img src="/assets/product-xx59-headphones/mobile/image-product.jpg" alt="">
+        </picture>
+        
       </div>
       <div class="product-headphones-text">
         <h4>NEW PRODUCT</h4>
@@ -104,8 +107,10 @@
           <!-- Mobil için varsayılan -->
           <img src="../shared/mobile/image-best-gear.jpg" alt="Best Gear Image">
         </picture>
-        <h3>Bringing you the <span>best</span> audio gear</h3>
-        <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+        <div>
+          <h3>Bringing you the <span>best</span> audio gear</h3>
+          <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+        </div>
       </div>
     </div>
     <div class="footer">
