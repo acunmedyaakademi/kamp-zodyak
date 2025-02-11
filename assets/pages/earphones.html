@@ -32,9 +32,10 @@
           <li><a href="/assets/pages/earphones.html" class="menu__item">Earphones</a></li>
         </ul>
       </div>
-      <a href="/"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
+      <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
       <a href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
+    <hr class="custom-hr">
     <div class="header-hero">
       <h2>EARPHONES</h2>
     </div>
@@ -49,15 +50,16 @@
           <!-- Mobil için varsayılan -->
           <img src="../product-yx1-earphones/mobile/image-product.jpg" alt="">
         </picture>
+
         
-        <div class="product-headphones-text">
-          <h4>NEW PRODUCT</h4>
-          <h3> YX1 WIRELESS
-            EARPHONES</h3>
-          <p>Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy
-            incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.</p>
-          <button>See Product</button>
-        </div>
+      </div>
+      <div class="product-headphones-text">
+        <h4>NEW PRODUCT</h4>
+        <h3> YX1 WIRELESS
+          EARPHONES</h3>
+        <p>Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy
+          incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.</p>
+        <button>See Product</button>
       </div>
     </div>
     <div class="categories">
@@ -68,7 +70,7 @@
       </div>
       <div class="category-item">
         <img src="/assets/categories-img-mobile/speakers.svg" alt="Speakers Img">
-        
+
         <h3>Speakers</h3>
         <a href="#">Shop<span>></span></a>
       </div>
@@ -78,33 +80,41 @@
         <a href="#">Shop <span>></span></a>
       </div>
     </div>
+
     <div class="main-content">
       <div class="content-text">
         <picture>
+          <!-- Desktop için -->
+          <source srcset="../shared/desktop/image-best-gear.jpg" media="(min-width: 768px)">
           <!-- Tablet için -->
-          <source srcset="../shared/tablet/image-best-gear.jpg" media="(min-width: 768px)">
+          <source srcset="../shared/tablet/image-best-gear.jpg" media="(min-width: 425px)">
           <!-- Mobil için varsayılan -->
           <img src="../shared/mobile/image-best-gear.jpg" alt="Best Gear Image">
         </picture>
         
-        <h3>Bringing you the <span>best</span> audio gear</h3>
-        <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones,
-          speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to
-          browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who
-          make Audiophile the best place to buy your portable audio equipment.</p>
+
+        <div>
+          <h3>Bringing you the <span>best</span> audio gear</h3>
+          <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones,
+            speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to
+            browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who
+            make Audiophile the best place to buy your portable audio equipment.</p>
+        </div>
       </div>
     </div>
 
     <div class="footer">
       <img src="../logos/top-orange-line.svg" alt="">
-      <a href="/"><img src="../shared/desktop/logo.svg" alt="Company Logo"></a>
-      <div class="navbar">
-        <ul>
-          <li>Home</li>
-          <li>Headphones</li>
-          <li>Speakers</li>
-          <li>Earphones</li>
-        </ul>
+      <div class="footer-top">
+        <a href="/"><img src="../shared/desktop/logo.svg" alt="Company Logo"></a>
+        <div class="navbar">
+          <ul>
+            <li>Home</li>
+            <li>Headphones</li>
+            <li>Speakers</li>
+            <li>Earphones</li>
+          </ul>
+        </div>
       </div>
       <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound
         specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility
