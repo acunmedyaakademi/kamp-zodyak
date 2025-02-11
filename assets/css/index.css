@@ -455,7 +455,7 @@ body {
 
 /* media start here */
 /* tablet version start here */
-@media (width > 525px) {
+@media ( min-width: 525px) {
   body {
     min-width: 768px;
   }
@@ -660,7 +660,10 @@ body {
 }
 
 /* desktop version start here */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+  body {
+    min-width: 1200px;
+  }
   .header {
     width: 100%;
     padding-inline: 165px;
