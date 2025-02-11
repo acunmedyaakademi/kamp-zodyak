@@ -448,8 +448,10 @@ body {
 
 /* media start here */
 /* tablet version start here */
-@media (width > 425px) {
-
+@media (width > 525px) {
+  body {
+    min-width: 768px;
+  }
   .header {
     display: flex;
     justify-content: space-between;
