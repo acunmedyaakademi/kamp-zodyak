@@ -130,7 +130,7 @@ body {
     line-height: 25px;
     letter-spacing: 0px;
     text-align: center;
-    opacity: 0.5;
+    color: #7D7D7D;
     margin-bottom: 24px;
   }
   a {
@@ -170,7 +170,7 @@ body {
       font-size: 15px;
       line-height: 25px;
       letter-spacing: 0px;
-      opacity: 0.5;
+      color: #7D7D7D;
     }
   }
 }
@@ -201,6 +201,7 @@ body {
     margin-top: -60px;
     margin-inline: auto;
     margin-bottom: 38px;
+    z-index: -1;
   }
   h3 {
     font-weight: 700;
@@ -216,9 +217,8 @@ body {
     line-height: 17.76px;
     letter-spacing: 1px;
     text-align: center;
-    color: #000000;
     text-decoration: none;
-    opacity: 0.5;
+    color: #7D7D7D;
     span {
       margin-left: 13px;
       color: #D87D4A;
