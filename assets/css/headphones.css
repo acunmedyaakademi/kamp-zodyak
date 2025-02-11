@@ -476,4 +476,15 @@ body {
       }
     }
   }
+  .footer {
+    padding-inline: 165px;
+    p {
+      max-width: 540px;
+    }
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
 }
