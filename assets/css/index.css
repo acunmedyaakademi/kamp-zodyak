@@ -10,7 +10,7 @@ body {
 .hero-text {
   padding-top: 108px;
   padding-bottom: 112px;
-  width: 328px;
+  min-width: 328px;
   display: block;
   margin-inline: auto;
 
@@ -501,7 +501,9 @@ body {
     flex-direction: row;
     padding-inline: 40px;
   }
-
+  .products{
+    padding-inline: 25px;
+  }
   .product-zx9 {
     min-width: 589px;
     height: 620px;
@@ -539,6 +541,7 @@ body {
     display: flex;
     max-width: 589px;
     height: 320px;
+    gap: 11px;
 
     img {
       margin-top: 24px;
@@ -549,7 +552,7 @@ body {
     .product-yx1-text {
       width: 350px;
       border-radius: 9px;
-      height: 320px;
+      height: 300px;
       margin-top: 24px;
       background-color: rgba(241, 241, 241, 1);
     }
@@ -577,4 +580,68 @@ body {
     }
   }
 
+  .main-content {
+    margin-inline: 25px;
+    margin-bottom: 120px;
+    margin-top: 120px;
+  
+    .content-text {
+      text-align: center;
+      padding-inline: 80px;
+  
+      img {
+        border-radius: 8px;
+        margin-bottom: 40px;
+      }
+  
+      h3 {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38.25px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+        padding-inline: 15px;
+  
+        span {
+          color: #D87D4A;
+        }
+      }
+  
+      p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0px;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .footer {
+    padding-inline: 40px;
+    text-align: left;
+
+    >img {
+      display: block;
+      margin-left: 0px;
+    }
+
+    a>img {
+      display: block;
+      margin-left: 0px;
+      padding-bottom: 32px;
+    }
+
+    ul {
+      display: flex;
+      gap: 34px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }

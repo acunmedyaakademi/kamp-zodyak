@@ -93,7 +93,12 @@
     </div>
     <div class="main-content">
       <div class="content-text">
-        <img src="/assets/shared/mobile/image-best-gear.jpg" alt="">
+        <picture>
+          <!-- Tablet için -->
+          <source srcset="./assets/shared/tablet/image-best-gear.jpg" media="(min-width: 768px)">
+          <!-- Mobil için varsayılan -->
+          <img src="./assets/shared/mobile/image-best-gear.jpg" alt="Best Gear Image">
+        </picture>
         <h3>Bringing you the <span>best</span> audio gear</h3>
         <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones,
           speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to
@@ -103,7 +108,7 @@
     </div>
     <div class="footer">
       <img src="./assets/logos/top-orange-line.svg" alt="">
-      <a href="/"><img src="./assets/shared/desktop/logo.svg "></a>
+      <a href="/"><img src="./assets/shared/desktop/logo.svg" alt="Company Logo"></a>
       <div class="navbar">
         <ul>
           <li>Home</li>
@@ -117,11 +122,15 @@
         -
         we’re open 7 days a week.
       </p>
-      <span>Copyright 2021. All Rights Reserved</span>
-      <div class="social-media">
-        <a href="#"><img src="./assets/logos/facebook-logo.svg" alt="facebook icon"></a>
-        <a href="#"><img src="./assets/logos/twitter-logo.svg" alt="twitter icon"></a>
-        <a href="#"><img src="./assets/logos/instagram-logo.svg" alt="instagram icon"></a>
+      <div class="footer-bottom">
+        <div>
+          <span>Copyright 2021. All Rights Reserved</span>
+        </div>
+        <div class="social-media">
+          <a href="#"><img src="./assets/logos/facebook-logo.svg" alt="facebook icon"></a>
+          <a href="#"><img src="./assets/logos/twitter-logo.svg" alt="twitter icon"></a>
+          <a href="#"><img src="./assets/logos/instagram-logo.svg" alt="instagram icon"></a>
+        </div>
       </div>
     </div>
   </div>
