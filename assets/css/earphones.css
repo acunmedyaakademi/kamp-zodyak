@@ -1,6 +1,7 @@
   /* header burada başlıyor */
   a {
     text-decoration: none;
+    color: inherit;
   }
 
   .header {
