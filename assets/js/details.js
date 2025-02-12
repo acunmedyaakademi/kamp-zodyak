@@ -6,8 +6,8 @@ let addBtn = document.querySelector('.addBtn').addEventListener('click', functio
   myDialog.showModal();
   const productNames = productName.innerText
   const productPrices = productPrice.innerText
-  console.log(productNames)
   card.push({name:productNames, price:productPrices})
+  console.log(card)
 })
 // close the dialog with overlay
 myDialog.addEventListener("click", (event) => {
