@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deneme</title>
+  <title>audiophile</title>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script src="assets/js/details.js" defer></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
         </ul>
       </div>
       <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
-      <a href="index.html"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
+      <a class="basketBtn" href="#" ><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
     <div class="hero">
       <div class="hero-text">
@@ -153,6 +154,24 @@
       </div>
     </div>
   </div>
+
+    <!-- dialog part  -->
+    <div class="overlay"></div>
+    <dialog id="myDialog" class="modal-dialog">
+      <div class="dialog-top">
+        <h3>Cart <span class="cardLength"></span></h3>
+        <button class="remove-all" id="removeBtn">Remove All</button>
+      </div>
+      <div class="dialog-product-part">
+  
+      </div>
+      <div class="dialog-bottom">
+        <h6>TOTAL</h6>
+        <span id="total"> </span>
+      </div>
+  <button class="checkout-btn">CHECKOUT</button>
+    </dialog>
+  
 </body>
 
 </html>
