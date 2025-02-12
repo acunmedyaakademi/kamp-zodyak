@@ -34,12 +34,12 @@
     <div class="product-detail">
       <a href="#">Go Back</a>
       <div class="product-detail-item">
-        <img src="/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg" alt="">
+        <img id="productPhoto" src="/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg" alt="">
         <div class="product-detail-text">
-          <h3>XX99 Mark I <br> Headphones</h3>
+          <h3 id="productName">XX99 Mark I <br> Headphones</h3>
           <p>As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio
             reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.</p>
-          <h5>$ 1,750</h5>
+          <h5 id="productPrice">$ 1,750</h5>
           <div class="btn-group">
             <div>
               <button>-</button>
@@ -177,28 +177,17 @@
   <div class="overlay"></div>
   <dialog id="myDialog" class="modal-dialog">
     <div class="dialog-top">
-      <h3>Cart <span>(0)</span></h3>
-      <button class="remove-all">Remove All</button>
+      <h3>Cart <span class="cardLength"></span></h3>
+      <button class="remove-all" id="removeBtn">Remove All</button>
     </div>
     <div class="dialog-product-part">
-      <div class="product-left">
-        <img src="#" alt="">
-      </div>
-      <div class="product-middle">
-        <h2>Product Name</h2>
-        <h4>Product Price</h4>
-      </div>
-      <div class="product-right">
-        <button class="btn decrement">-</button>
-        <span class="counter">0</span>
-        <button class="btn increment">+</button>
-      </div>
+
     </div>
     <div class="dialog-bottom">
       <h6>TOTAL</h6>
-      <span>$150,36</span>
+      <span id="total"> </span>
     </div>
-    <button class="checkout-btn">CHECKOUT</button>
+<button class="checkout-btn">CHECKOUT</button>
   </dialog>
 
 </body>
