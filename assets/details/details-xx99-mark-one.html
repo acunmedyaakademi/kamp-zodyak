@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../details-css/details-xx99-mark-one.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
+  <script src="/assets/js/details.js" defer></script>
   <title>Product Details</title>
 </head>
 <body>
@@ -27,24 +28,25 @@
         </ul>
       </div>
       <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
-      <a href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
+      <a class="basketBtn" href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
     <div class="product-detail">
-      <a href="#">Go Back</a>
+      <a href="/assets/pages/headphones.html">Go Back</a>
       <div class="product-detail-item">
-        <img src="/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg" alt="">
+        <img id="productPhoto" src="/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg" alt="">
         <div class="product-detail-text">
-          <h3>XX99 Mark I <br> Headphones</h3>
+          <h3 id="productName">XX99 Mark I <br> Headphones</h3>
           <p>As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio
             reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.</p>
-          <h5>$ 1,750</h5>
+          <h5 id="productPrice">$ 1,750</h5>
+          
           <div class="btn-group">
             <div>
               <button>-</button>
               <button>1</button>
               <button>+</button>
             </div>
-            <button>ADD TO CART</button>
+            <button class="addBtn">ADD TO CART</button>
           </div>
         </div>
 
@@ -92,34 +94,34 @@
       <div class="product-also-like-item">
         <img src="/assets/product-xx99-mark-two-headphones/mobile/xx99-mark-2-mini-img.svg" alt="">
         <h3>XX99 Mark II</h3>
-        <a href="#">SEE PRODUCT</a>
+        <a href="/assets/details/xx99-mark-two.html">SEE PRODUCT</a>
       </div>
       <div class="product-also-like-item">
         <img src="/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg" alt="">
         <h3>XX59</h3>
-        <a href="#">SEE PRODUCT</a>
+        <a href="/assets/details/details-xx59-headphones.html">SEE PRODUCT</a>
       </div>
       <div class="product-also-like-item">
         <img src="/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg" alt="">
         <h3>ZX9 SPEAKER</h3>
-        <a href="#">SEE PRODUCT</a>
+        <a href="/assets/details/details-zx9-speakers.html">SEE PRODUCT</a>
       </div>
     </div>
     <div class="categories">
       <div class="category-item">
         <img src="/assets/categories-img-mobile/headphones.svg" alt="Headphones Img">
         <h3>Headphones</h3>
-        <a href="#">Shop<span>></span></a>
+        <a href="/assets/pages/headphones.html">Shop<span>></span></a>
       </div>
       <div class="category-item">
         <img src="/assets/categories-img-mobile/speakers.svg" alt="Speakers Img">
         <h3>Speakers</h3>
-        <a href="#">Shop<span>></span></a>
+        <a href="/assets/pages/speakers.html">Shop<span>></span></a>
       </div>
       <div class="category-item">
         <img src="/assets/categories-img-mobile/earphones.svg" alt="Earphones Img">
         <h3>Earphones</h3>
-        <a href="#">Shop <span>></span></a>
+        <a href="/assets/pages/earphones.html">Shop <span>></span></a>
       </div>
     </div>
     <div class="main-content">
@@ -134,7 +136,10 @@
         </picture>
         <div>
           <h3>Bringing you the <span>best</span> audio gear</h3>
-          <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+          <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones,
+            speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you
+            to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic
+            people who make Audiophile the best place to buy your portable audio equipment.</p>
         </div>
       </div>
     </div>
@@ -143,10 +148,10 @@
       <a href="/"><img src="../shared/desktop/logo.svg" alt="Company Logo"></a>
       <div class="navbar">
         <ul>
-          <li>Home</li>
-          <li>Headphones</li>
-          <li>Speakers</li>
-          <li>Earphones</li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/assets/pages/headphones.html">Headphones</a></li>
+          <li><a href="/assets/pages/speakers.html">Speakers</a></li>
+          <li><a href="/assets/pages/earphones.html">Earphones</a></li>
         </ul>
       </div>
       <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound
@@ -159,16 +164,31 @@
           <span>Copyright 2021. All Rights Reserved</span>
         </div>
         <div class="social-media">
-          <a href="#"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
-          <a href="#"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
-          <a href="#"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
+          <a href="https://www.facebook.com/"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
+          <a href="https://x.com"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
+          <a href="https://www.instagram.com/"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
         </div>
       </div>
     </div>
 
 
   </div>
+  <!-- dialog part  -->
+  <div class="overlay"></div>
+  <dialog id="myDialog" class="modal-dialog">
+    <div class="dialog-top">
+      <h3>Cart <span class="cardLength"></span></h3>
+      <button class="remove-all" id="removeBtn">Remove All</button>
+    </div>
+    <div class="dialog-product-part">
 
+    </div>
+    <div class="dialog-bottom">
+      <h6>TOTAL</h6>
+      <span id="total"> </span>
+    </div>
+<button class="checkout-btn">CHECKOUT</button>
+  </dialog>
 
 </body>
 

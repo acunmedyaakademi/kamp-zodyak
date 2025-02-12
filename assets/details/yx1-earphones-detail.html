@@ -27,7 +27,7 @@
         </ul>
       </div>
       <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
-      <a href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
+      <a href="#" class="basketBtn"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
     <div class="product-detail">
       <a href="#">Go Back</a>
@@ -35,13 +35,13 @@
         <picture>
           <source srcset="/assets/product-yx1-earphones/desktop/image-product.jpg" media="(min-width: 1024px)">
           <source srcset="/assets/product-yx1-earphones/tablet/image-product.jpg" media="(min-width: 525px)">
-          <img src="/assets/product-yx1-earphones/mobile/image-product.jpg" alt="">
+          <img id="productPhoto" src="/assets/product-yx1-earphones/mobile/image-product.jpg" alt="">
         </picture>        
         <div class="product-detail-text">
           <h4>NEW PRODUCT</h4>
-          <h3>YX1 WIRELESS <br>EARPHONES</h3>
+          <h3 id="productName">YX1 WIRELESS <br>EARPHONES</h3>
           <p>Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.</p>
-          <h5>$ 599</h5>
+          <h5 id="productPrice" >$ 599</h5>
           <div class="btn-group">
             <div>
               <button>-</button>
@@ -147,10 +147,10 @@
       <a href="/"><img src="../shared/desktop/logo.svg" alt="Company Logo"></a>
       <div class="navbar">
         <ul>
-          <li>Home</li>
-          <li>Headphones</li>
-          <li>Speakers</li>
-          <li>Earphones</li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/assets/pages/headphones.html">Headphones</a></li>
+          <li><a href="/assets/pages/speakers.html">Speakers</a></li>
+          <li><a href="/assets/pages/earphones.html">Earphones</a></li>
         </ul>
       </div>
       <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound
@@ -163,37 +163,29 @@
           <span>Copyright 2021. All Rights Reserved</span>
         </div>
         <div class="social-media">
-          <a href="#"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
-          <a href="#"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
-          <a href="#"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
+          <a href="https://www.facebook.com/"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
+          <a href="https://x.com"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
+          <a href="https://www.instagram.com/"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
         </div>
       </div>
     </div>
   </div>
   <!-- dialog part  -->
+  <div class="overlay"></div>
   <dialog id="myDialog" class="modal-dialog">
     <div class="dialog-top">
-      <h3>Cart <span>(0)</span></h3>
-      <button>Remove All</button>
+      <h3>Cart <span class="cardLength"></span></h3>
+      <button class="remove-all" id="removeBtn">Remove All</button>
     </div>
     <div class="dialog-product-part">
-      <div class="product-left">
-        <img src="#" alt="">
-      </div>
-      <div class="product-middle">
-        <h2>Product Name</h2>
-        <h4>Product Price</h4>
-      </div>
-      <div class="product-right">
-        <Button>-</Button> <span>0</span> <button>+</button>
-      </div>
+
     </div>
-    <div class="dailog-bottom">
-      <h6>Total</h6>
-      <span>$150,36</span>
+    <div class="dialog-bottom">
+      <h6>TOTAL</h6>
+      <span id="total"> </span>
     </div>
-    <button>CHECKOUT</button>
-</dialog>
+<button class="checkout-btn">CHECKOUT</button>
+  </dialog>
   
 
 

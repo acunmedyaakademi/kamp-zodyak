@@ -1,6 +1,7 @@
   /* header burada başlıyor */
   a {
     text-decoration: none;
+    color: inherit;
   }
 
   .header {
@@ -264,6 +265,10 @@
     background-color: #101010;
     text-align: center;
     padding-inline: 24px;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
     >img {
       display: block;

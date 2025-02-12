@@ -390,6 +390,11 @@ body {
   text-align: center;
   padding-inline: 24px;
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   p {
     font-weight: 400;
     font-size: 15px;
@@ -658,6 +663,7 @@ button:hover {
   .product-also-like {
     display: flex;
     gap: 11px;
+
     img {
       width: 100%;
     }
@@ -789,7 +795,7 @@ button:hover {
       }
 
       .product-detail-text {
-        padding-block: 77px;
+        padding-block: 73px;
       }
     }
 
@@ -880,6 +886,8 @@ button:hover {
     display: flex;
     justify-content: space-between;
   }
+
+  
 }
 
 /* Dialog Starts Here */

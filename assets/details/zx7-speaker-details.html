@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="/assets/details-css/zx7-speaker-details.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
   <script src="/assets/js/details.js" defer></script>
-
   <title>Product Details</title>
 </head>
 <body>
@@ -22,27 +21,27 @@
         </label>
         <ul class="menu__box">
           <li><a href="/index.html" class="menu__item">Home</a></li>
-          <li><a href="#" class="menu__item">Headphones</a></li>
+          <li><a href="/assets/pages/headphones.html" class="menu__item">Headphones</a></li>
           <li><a href="/assets/pages/speakers.html" class="menu__item">Speakers</a></li>
           <li><a href="/assets/pages/earphones.html" class="menu__item">Earphones</a></li>
         </ul>
       </div>
       <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
-      <a href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
+      <a href="#" class="basketBtn" ><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
     <div class="product-detail">
-      <a href="#">Go Back</a>
+      <a href="/assets/pages/speakers.html">Go Back</a>
       <div class="product-detail-item">
         <picture>
           <source srcset="/assets/product-zx7-speaker/desktop/image-product.jpg" media="(min-width: 1024px)">
           <source srcset="/assets/product-zx7-speaker/tablet/image-product.jpg" media="(min-width: 525px)">
-          <img src="/assets/product-zx7-speaker/mobile/image-product.jpg" alt="">
+          <img id="productPhoto" src="/assets/product-zx7-speaker/mobile/image-product.jpg" alt="">
         </picture>        
         <div class="product-detail-text">
           <h4>NEW PRODUCT</h4>
-          <h3>ZX7 <br>SPEAKER</h3>
+          <h3 id="productName">ZX7 <br>SPEAKER</h3>
           <p>Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.</p>
-          <h5>$ 3,500</h5>
+          <h5 id="productPrice">$ 3,500</h5>
           <div class="btn-group">
             <div>
               <button>-</button>
@@ -88,8 +87,8 @@
           <source srcset="/assets/product-zx9-speaker/tablet/image-category-page-preview.jpg" media="(min-width: 525px)">
           <img src="/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg" alt="">
         </picture>
-        <h3>XX99 Mark I</h3>
-        <a href="#">SEE PRODUCT</a>
+        <h3>ZX9 SPEAKER</h3>
+        <a href="/assets/details/details-zx9-speakers.html">SEE PRODUCT</a>
       </div>
       <div class="product-also-like-item">
         <picture>
@@ -98,7 +97,7 @@
           <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg" alt="">
         </picture>
         <h3>XX99 Mark I</h3>
-        <a href="#">SEE PRODUCT</a>
+        <a href="/assets/details/details-xx99-mark-one.html">SEE PRODUCT</a>
       </div>
       <div class="product-also-like-item">
         <picture>
@@ -106,25 +105,25 @@
           <source srcset="/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg" media="(min-width: 525px)">
           <img src="/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg" alt="">
         </picture>
-        <h3>XX99 Mark I</h3>
-        <a href="#">SEE PRODUCT</a>
+        <h3>XX59</h3>
+        <a href="/assets/details/details-xx59-headphones.html">SEE PRODUCT</a>
       </div>
     </div>
     <div class="categories">
       <div class="category-item">
         <img src="/assets/categories-img-mobile/headphones.svg" alt="Headphones Img">
         <h3>Headphones</h3>
-        <a href="#">Shop<span>></span></a>
+        <a href="/assets/pages/headphones.html">Shop<span>></span></a>
       </div>
       <div class="category-item">
         <img src="/assets/categories-img-mobile/speakers.svg" alt="Speakers Img">
         <h3>Speakers</h3>
-        <a href="#">Shop<span>></span></a>
+        <a href="/assets/pages/speakers.html">Shop<span>></span></a>
       </div>
       <div class="category-item">
         <img src="/assets/categories-img-mobile/earphones.svg" alt="Earphones Img">
         <h3>Earphones</h3>
-        <a href="#">Shop <span>></span></a>
+        <a href="/assets/pages/earphones.html">Shop <span>></span></a>
       </div>
     </div>
     <div class="main-content">
@@ -148,10 +147,10 @@
       <a href="/"><img src="../shared/desktop/logo.svg" alt="Company Logo"></a>
       <div class="navbar">
         <ul>
-          <li>Home</li>
-          <li>Headphones</li>
-          <li>Speakers</li>
-          <li>Earphones</li>
+          <a href="/index.html"><li>Home</li></a>
+            <a href="/assets/pages/headphones.html"><li>Headphones</li></a>
+            <a href="/assets/pages/speakers.html"><li>Speakers</li></a>
+            <a href="/assets/pages/earphones.html"><li>Earphones</li></a>
         </ul>
       </div>
       <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound
@@ -164,37 +163,29 @@
           <span>Copyright 2021. All Rights Reserved</span>
         </div>
         <div class="social-media">
-          <a href="#"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
-          <a href="#"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
-          <a href="#"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
+          <a href="https://www.facebook.com/"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
+          <a href="https://x.com"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
+          <a href="https://www.instagram.com/"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
         </div>
       </div>
     </div>
   </div>
   <!-- dialog part  -->
+  <div class="overlay"></div>
   <dialog id="myDialog" class="modal-dialog">
     <div class="dialog-top">
-      <h3>Cart <span>(0)</span></h3>
-      <button>Remove All</button>
+      <h3>Cart <span class="cardLength"></span></h3>
+      <button class="remove-all" id="removeBtn">Remove All</button>
     </div>
     <div class="dialog-product-part">
-      <div class="product-left">
-        <img src="#" alt="">
-      </div>
-      <div class="product-middle">
-        <h2>Product Name</h2>
-        <h4>Product Price</h4>
-      </div>
-      <div class="product-right">
-        <Button>-</Button> <span>0</span> <button>+</button>
-      </div>
+
     </div>
-    <div class="dailog-bottom">
-      <h6>Total</h6>
-      <span>$150,36</span>
+    <div class="dialog-bottom">
+      <h6>TOTAL</h6>
+      <span id="total"> </span>
     </div>
-    <button>CHECKOUT</button>
-</dialog>
+<button class="checkout-btn">CHECKOUT</button>
+  </dialog>
   
 
 
