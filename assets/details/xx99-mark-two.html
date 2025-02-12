@@ -35,7 +35,7 @@
         <picture>
           <source srcset="/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg" media="(min-width: 1024px)">
           <source srcset="/assets/product-xx99-mark-two-headphones/tablet/image-product.jpg" media="(min-width: 525px)">
-          <img  id="productPhoto" src="/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg" alt="">
+          <img src="/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg" alt="">
         </picture>        
         <div class="product-detail-text">
           <h4>NEW PRODUCT</h4>
@@ -173,9 +173,30 @@
 
   </div>
   <!-- dialog part  -->
-   <div class="overlay"></div>
+  <div class="overlay"></div> 
   <dialog id="myDialog" class="modal-dialog">
-
+    <div class="dialog-top">
+      <h3>Cart <span>(0)</span></h3>
+      <button class="remove-all">Remove All</button>
+    </div>
+    <div class="dialog-product-part">
+      <div class="product-left">
+        <img src="#" alt="">
+      </div>
+      <div class="product-middle" >
+        <h2>Product Name</h2>
+        <h4>Product Price</h4>
+      </div>
+      <div class="product-right">
+        <button class="btn decrement">-</button>
+        <span class="counter">0</span>
+        <button class="btn increment">+</button>
+      </div>
+    </div>
+    <div class="dialog-bottom">
+      <h6>TOTAL</h6>
+      <span>$150,36</span>
+    </div>
     <button class="checkout-btn">CHECKOUT</button>
   </dialog>
   
