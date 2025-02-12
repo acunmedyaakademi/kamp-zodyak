@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/details-css/details-1.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
+  <script src="/assets/js/details.js" defer></script>
   <title>Product Details</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
         </ul>
       </div>
       <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
-      <a href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
+      <a href="#" class="basketBtn"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
     <div class="product-detail">
       <a href="#">Go Back</a>
@@ -38,16 +39,16 @@
         </picture>        
         <div class="product-detail-text">
           <h4>NEW PRODUCT</h4>
-          <h3>XX99 Mark II <br> Headphones</h3>
+          <h3 id="productName">XX99 Mark II <br> Headphones</h3>
           <p>The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.</p>
-          <h5>$ 2,999</h5>
+          <h5 id="productPrice">$ 2,999</h5>
           <div class="btn-group">
             <div>
               <button>-</button>
               <button>1</button>
               <button>+</button>
             </div>
-            <button>ADD TO CART</button>
+            <button class="addBtn">ADD TO CART</button>
           </div>
         </div>
 
@@ -172,7 +173,7 @@
 
   </div>
   <!-- dialog part  -->
-  <dialog id="myDialog" class="modal-dialog" open>
+  <dialog id="myDialog" class="modal-dialog" >
     <div class="dialog-top">
       <h3>Cart <span>(0)</span></h3>
       <button>Remove All</button>
