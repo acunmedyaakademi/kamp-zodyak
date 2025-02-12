@@ -251,7 +251,8 @@ body {
     margin-bottom: 20px;
   }
 }
-.container > h2 {
+
+.container>h2 {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
@@ -262,6 +263,7 @@ body {
   margin-top: 120px;
 
 }
+
 .product-also-like {
   margin-inline: 24px;
 
@@ -269,6 +271,7 @@ body {
     margin-bottom: 56px;
     width: 327px;
     margin-inline: auto;
+
     h3 {
       font-family: Manrope;
       font-weight: 700;
@@ -373,6 +376,7 @@ body {
     text-align: center;
     text-decoration: none;
     color: #7D7D7D;
+
     span {
       margin-left: 13px;
       color: #D87D4A;
@@ -439,6 +443,7 @@ body {
     padding: 0;
   }
 }
+
 /* Mobile End */
 
 /* Dialog Starts Here */
@@ -575,66 +580,81 @@ button:hover {
   body {
     min-width: 1024px;
   }
+
   .header {
     .menu__btn {
       left: 39px;
     }
+
     padding-inline: 39px;
-    > .logo {
+
+    >.logo {
       margin-left: 42px;
       margin-right: auto;
     }
   }
+
   .product-detail {
     a {
       margin-left: 39px;
     }
+
     .product-detail-item {
       display: flex;
       margin-inline: 39px;
       gap: 69px;
       width: 689px;
+
       picture {
         img {
           width: 100%;
         }
       }
+
       .product-detail-text {
         max-width: 339px;
         padding-block: 45px;
       }
     }
   }
+
   .product-features {
     margin-inline: 39px;
+
     h2 {
       width: 339px;
     }
+
     .box {
       display: flex;
+
       ul li {
         margin-bottom: 8px;
       }
     }
   }
+
   .product-detail-images {
     display: grid;
-    grid-template-areas: 
-    "img1 img3"
-    "img2 img3";
+    grid-template-areas:
+      "img1 img3"
+      "img2 img3";
     gap: 18px;
 
     img:nth-of-type(1) {
       margin: 0;
       grid-area: img1;
     }
+
     img:nth-of-type(2) {
       grid-area: img2;
     }
+
     img:nth-of-type(3) {
       grid-area: img3;
     }
   }
+
   .product-also-like {
     display: flex;
     gap: 11px;
@@ -649,24 +669,29 @@ button:hover {
     gap: 10px;
     margin-top: 180px;
   }
+
   .main-content {
     margin-inline: 39px;
+
     .content-text {
       img {
         width: 100%;
         height: 300px;
         margin-bottom: 63px;
       }
+
       h3 {
         font-size: 40px;
         letter-spacing: 1.43px;
         line-height: 44px;
       }
+
       p {
         margin-inline: 57px;
       }
     }
   }
+
   .footer {
     padding-inline: 40px;
     text-align: left;
@@ -699,84 +724,101 @@ button:hover {
   body {
     min-width: 1440px;
   }
+
   .header {
     width: 100%;
     padding-inline: 165px;
     margin-bottom: 79px;
-     a {
+
+    a {
       order: 3;
       display: block;
-      
-     }
+
+    }
+
     .logo {
       display: block;
       order: 1;
       margin-left: 0;
       margin-right: 0;
     }
+
     .hamburger-menu {
       order: 2;
 
-      #menu__toggle , .menu__btn {
+      #menu__toggle,
+      .menu__btn {
         display: none;
       }
+
       .menu__box {
-        position: static; 
-        width: auto; 
-        padding: 0; 
-        box-shadow: none; 
-        display: flex; 
-        flex-direction: row; 
-        justify-content: flex-start; 
+        position: static;
+        width: auto;
+        padding: 0;
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
         gap: 34px;
         background: inherit;
+
         .menu__item {
           color: #FFF;
         }
       }
     }
   }
+
   .product-detail {
     width: 1110px;
     margin-inline: auto;
+
     a {
       margin-left: 0;
-      
+
     }
+
     .product-detail-item {
       margin-inline: 0;
       width: 100%;
       gap: 124px;
       margin-top: 56px;
+
       picture {
         width: 540px;
       }
+
       .product-detail-text {
         padding-block: 77px;
       }
     }
 
   }
+
   .product-features {
     width: 1110px;
     margin-inline: auto;
     display: flex;
     gap: 125px;
+
     .box {
       flex-direction: column;
       margin-top: 0;
     }
 
   }
+
   .product-detail-images {
     width: 1110px;
     margin-inline: auto;
   }
+
   .categories {
     width: 1110px;
     height: auto;
     margin-inline: auto;
   }
+
   .main-content {
     .content-text {
       display: flex;
@@ -785,40 +827,50 @@ button:hover {
       gap: 125px;
       width: 1110px;
       margin-inline: auto;
+
       picture {
         width: 540px;
         height: 560px;
         order: 1;
-        img, source {
+
+        img,
+        source {
           height: auto;
         }
       }
-      > div {
+
+      >div {
         margin: 0;
         width: 445px;
         height: 295px;
-        padding-block:100px ;
-        h3, p {
+        padding-block: 100px;
+
+        h3,
+        p {
           text-align: left;
           margin-inline: 0;
         }
       }
     }
   }
-  .container > h2 {
+
+  .container>h2 {
     font-size: 32px;
     line-height: 36px;
     letter-spacing: 1.14px;
     margin-bottom: 64px;
 
   }
+
   .product-also-like {
     width: 1110px;
     margin-inline: auto;
 
   }
+
   .footer {
     padding-inline: 165px;
+
     p {
       max-width: 540px;
     }
@@ -828,4 +880,189 @@ button:hover {
     display: flex;
     justify-content: space-between;
   }
+}
+
+/* Dialog Starts Here */
+
+.modal-dialog {
+  width: 387px;
+  padding: 18px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  position: fixed;
+  top: 35%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.dialog-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 31px;
+}
+
+.dialog-top h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.59px;
+  letter-spacing: 1.29px;
+  display: flex;
+  color: rgba(0, 0, 0, 1);
+
+}
+
+.dialog-top button {
+  background: none;
+  border: none;
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+  opacity: 50%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: Auto;
+  display: inline;
+  width: 100px;
+
+}
+
+.dialog-top button:hover {
+  color: #e67b3d;
+  opacity: 100%;
+}
+
+.dialog-product-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-left img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.product-middle h2 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  margin: 0;
+}
+
+.product-middle h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  opacity: 50%;
+}
+
+.product-right {
+  display: flex;
+  align-items: center;
+  background: rgba(241, 241, 241, 1);
+  width: 96px;
+  height: 32px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: rgb(216, 125, 74);
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.counter {
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  background: #f9f9f9;
+  padding: 10px 0;
+}
+
+.dialog-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+
+  h6 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    opacity: 50%;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.59px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.checkout-btn {
+  background-color: rgba(216, 125, 74, 1);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 32px;
+}
+
+.checkout-btn:hover {
+  transform: scale(1.05);
+}
+
+.checkout-btn:active {
+  transform: scale(0.95);
+}
+
+/* overlay part start here */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
 }
