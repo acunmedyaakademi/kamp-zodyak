@@ -1,6 +1,13 @@
 body {
   font-family: "Manrope";
 }
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
 .header {
   display: flex;
   justify-content: space-between;
