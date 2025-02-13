@@ -3,7 +3,7 @@ a {
 }
 .container {
   background: #FAFAFA;
-  font-family: Manrope;
+  font-family: 'Manrope';
 
 }
 .header {
@@ -364,6 +364,25 @@ a {
   }
 }
 
+/*end dialog*/
+#endDialog {
+  font-family: 'Manrope';
+  width: 327px;
+  padding: 32px;
+  .end-dialog-icon {
+    width: 64px;
+    height: 64px;
+  }
+  .end-dialog-text {
+    h2 {
+      margin-bottom: 16px;
+    }
+  }
+  .end-dialog-card {
+    width: 263px;
+  }
+}
+
 @media (min-width: 525px) {
   .header {
     .menu__btn {
@@ -401,6 +420,28 @@ a {
       justify-content: space-between;
     }
   }
+
+  /*end dialog*/
+#endDialog {
+  width: 540px;
+  padding: 48px;
+
+  .end-dialog-text {
+    h2 {
+      margin-bottom: 24px;
+    }
+  }
+  .end-dialog-card {
+    width: 444px;
+  }
+  .dialog-card-bottom {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .backtohomeBtn {
+    width: 444px;
+  }
+}
 
 }
 @media (min-width: 1024px) {
@@ -449,7 +490,6 @@ a {
       max-width: 540px;
     }
   }
-
   .footer-top {
     display: flex;
     justify-content: space-between;
