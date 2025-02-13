@@ -1,8 +1,8 @@
-export let card = [];
+let card = [];
 
 let selectedQuantity = 1;
 
-export function saveCartToLocalStorage() {
+function saveCartToLocalStorage() {
   localStorage.setItem('card', JSON.stringify(card));
 }
 
@@ -13,13 +13,13 @@ function loadCartFromLocalStorage() {
 
 const overlay = document.querySelector(".overlay");
 
-document.querySelector(".increase").addEventListener('click', function() {
+document.querySelector(".increase").addEventListener('click', function () {
   selectedQuantity++;
   document.querySelector(".quantity").innerText = selectedQuantity
 })
 
-document.querySelector(".decrease").addEventListener('click', function() {
-  if(selectedQuantity > 1) {
+document.querySelector(".decrease").addEventListener('click', function () {
+  if (selectedQuantity > 1) {
     selectedQuantity--;
     document.querySelector(".quantity").innerText = selectedQuantity
   }
@@ -61,7 +61,7 @@ function updateCard() {
   productList.innerHTML = ""
   let totalPrice = 0;
 
-  card.forEach((x,i)=> {
+  card.forEach((x, i) => {
     totalPrice += (x.price * x.quantity)
     const formattedTotalPrice = new Intl.NumberFormat('en-US', {
       style: 'currency',
@@ -89,7 +89,7 @@ function updateCard() {
   });
 
   // Eğer sepet boşsa toplam fiyatı sıfırla
-  if(card.length === 0) {
+  if (card.length === 0) {
     total.innerText = "0"
   }
 
@@ -103,26 +103,26 @@ function updateCard() {
 
   // quantity decrease/increase
   document.querySelectorAll('.increment').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
       const index = this.dataset.id;
-      if(card[index]) {
+      if (card[index]) {
         card[index].quantity += 1;
-        saveCartToLocalStorage ()
+        saveCartToLocalStorage()
         updateCard()
       }
     })
   })
 
   document.querySelectorAll('.decrement').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
       const index = this.dataset.id;
-      if(card[index].quantity > 1) {
+      if (card[index].quantity > 1) {
         card[index].quantity--;
 
-      }else {
+      } else {
         card.splice(index, 1)
       }
-      saveCartToLocalStorage ()
+      saveCartToLocalStorage()
       updateCard()
     })
   })
@@ -157,7 +157,7 @@ let basketBtn = document.querySelector('.basketBtn').addEventListener('click', f
 
 let lastScrollTop = 0; // Sayfa kaydırılmasını izlemek için
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   const stickyElement = document.querySelector('.header');
   const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -169,7 +169,7 @@ window.addEventListener('scroll', function() {
     // Yukarı kaydırıyorsak göster
     stickyElement.style.transform = 'translateY(0)';
   }
-  
+
   lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Sayfa en üste gelirse sıfırlama
 });
 
