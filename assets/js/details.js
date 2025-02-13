@@ -150,9 +150,9 @@ let basketBtn = document.querySelector('.basketBtn').addEventListener('click', f
   myDialog.showModal();
 })
 
-document.querySelector('.checkout-btn').addEventListener('click', function () {
-  window.location.href = "./pages/checkout.html";
-});
+// document.querySelector('.checkout-btn').addEventListener('click', function () {
+//   window.location.href = "checkout.html";
+// });
 
 loadCartFromLocalStorage();
 updateCard();
