@@ -1,0 +1,209 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: block;
+}
+
+.endDialog {
+  width: 280px;
+  border-radius: 8px;
+  border: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: white;
+  padding: 30px;
+}
+
+.end-dialog-icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+
+  .dialogCircle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: auto;
+  }
+
+  .dialogArrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: auto;
+  }
+
+}
+
+.end-dialog-text {
+  flex-grow: 0; 
+  width: auto; 
+  display: flex;
+  flex-direction: column; 
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.86px;
+    margin-top: 22px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    opacity: 50%;
+    margin-top: 0px;
+    color: rgba(0, 0, 0, 1);
+
+
+  }
+}
+
+.end-dialog-card {
+  background: #f1f1f1;
+  border-radius: 8px;
+  margin: 20px 0;
+  width: 290px;
+}
+
+.dialog-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+
+}
+
+.dialog-card-top img {
+  width: 28px;
+  height: 32px;
+}
+
+.dialog-card-text h3 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+.dialog-card-text h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  opacity: 50%;
+}
+
+.dialog-card-bottom {
+  background: black;
+  color: white;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 15px;
+
+  h5 {
+    opacity: 50%;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.59px;
+    letter-spacing: 0px;
+
+  }
+}
+
+.backtohomeBtn {
+  display: block;
+  background: #d87d4a;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 265px;
+
+}
+
+.backtohomeBtn:hover {
+  background: #b15f36;
+}
+
+@media (min-width: 525px) {
+  .endDialog {
+    width: 450px;
+    padding: 40px;
+  }
+
+  .end-dialog-card {
+    width: 444px;
+    border-radius: 8px;
+    display: flex;
+  }
+
+  .dialog-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    border-bottom: 1px solid #ccc;
+    width: 200px;
+    flex: 1;
+    padding: 3px;
+  }
+
+  .dialog-card-top img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .dialog-card-bottom {
+    background: black;
+    color: white;
+    padding: 15px;
+    width:190px;
+    flex-shrink: 0;
+    background: black;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .backtohomeBtn {
+    padding: 18px;
+    font-size: 16px;
+    background-color: #d07d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 410px;
+
+  }
+
+  .backtohomeBtn:hover {
+    background-color: #b8693c;
+  }
+}
