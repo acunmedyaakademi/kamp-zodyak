@@ -96,6 +96,8 @@
     }
   }
 
+  
+
   .header-hero {
     background: #000;
     border-top: 1px solid #1B1B1B;
@@ -334,6 +336,10 @@
       flex-direction: row;
       gap: 10px;
       padding-inline: 39px;
+    }
+
+    .header-hero {
+      padding-block: 97px;
     }
 
     .main-content {
