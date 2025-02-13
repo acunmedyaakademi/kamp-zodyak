@@ -746,6 +746,7 @@ body {
   }
 
   .categories {
+    padding-inline: 175px;
     margin-top: 120px;
     display: flex;
     flex-direction: row;
