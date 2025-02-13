@@ -238,6 +238,11 @@ li {
   background-color: #101010;
   text-align: center;
   padding-inline: 24px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
    p {
     font-weight: 400;
     font-size: 15px;

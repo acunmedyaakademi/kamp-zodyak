@@ -1,7 +1,8 @@
-  /* header burada başlıyor */
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* header burada başlıyor */
 
   .header {
     display: flex;
@@ -9,29 +10,26 @@
     align-items: center;
     background: #000000;
     padding: 32px 24px 32px 7px;
-
+    /* border-bottom: 1px solid #1B1B1B; */
+  
+  
     #menu__toggle {
       opacity: 0;
     }
-
-    #menu__toggle:checked+.menu__btn>span {
+    #menu__toggle:checked + .menu__btn > span {
       transform: rotate(45deg);
     }
-
-    #menu__toggle:checked+.menu__btn>span::before {
+    #menu__toggle:checked + .menu__btn > span::before {
       top: 0;
       transform: rotate(0deg);
     }
-
-    #menu__toggle:checked+.menu__btn>span::after {
+    #menu__toggle:checked + .menu__btn > span::after {
       top: 0;
       transform: rotate(90deg);
     }
-
-    #menu__toggle:checked~.menu__box {
+    #menu__toggle:checked ~ .menu__box {
       left: 0 !important;
     }
-
     .menu__btn {
       position: fixed;
       top: 20px;
@@ -42,10 +40,9 @@
       padding-top: 23px;
       z-index: 1;
     }
-
-    .menu__btn>span,
-    .menu__btn>span::before,
-    .menu__btn>span::after {
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
       display: block;
       position: absolute;
       width: 100%;
@@ -53,17 +50,14 @@
       background-color: #616161;
       transition-duration: .25s;
     }
-
-    .menu__btn>span::before {
+    .menu__btn > span::before {
       content: '';
       top: -8px;
     }
-
-    .menu__btn>span::after {
+    .menu__btn > span::after {
       content: '';
       top: 8px;
     }
-
     .menu__box {
       display: block;
       position: fixed;
@@ -78,7 +72,6 @@
       box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
       transition-duration: .25s;
     }
-
     .menu__item {
       display: block;
       padding: 12px 24px;
@@ -89,17 +82,18 @@
       text-decoration: none;
       transition-duration: .25s;
     }
-
     .menu__item:hover {
       background-color: #CFD8DC;
     }
   }
-
+  .custom-hr {
+    border: none;
+  
+  }
   .header-hero {
     background: #000;
-    border-top: 1px solid #1B1B1B;
     padding-block: 32px;
-
+    
     h2 {
       font-weight: 700;
       font-size: 28px;
@@ -109,7 +103,6 @@
       text-align: center;
     }
   }
-
   /* header burada bitiyor */
 
 
@@ -265,6 +258,11 @@
     text-align: center;
     padding-inline: 24px;
 
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     >img {
       display: block;
       margin-inline: auto;
@@ -323,13 +321,31 @@
 
 
   @media (min-width :525px) {
-
+    .header {
+      .menu__btn {
+        left: 39px;
+      }
+      padding-inline: 39px;
+      > .logo {
+        margin-left: 42px;
+        margin-right: auto;
+      }
+    }
+  
+    .header-hero {
+      padding-block: 97px;
+      h2 {
+        font-size: 40px;
+      }
+    }
     .categories {
       display: flex;
       flex-direction: row;
       gap: 10px;
       padding-inline: 39px;
     }
+
+    
 
     .main-content {
       padding-inline: 0px;
@@ -397,42 +413,43 @@
       min-width: 1440px;
     }
 
+    h2 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 44px;
+      letter-spacing: 1.43px;
+    }
+
     .header {
       width: 100%;
       padding-inline: 165px;
-
-      a {
+       a {
         order: 3;
         display: block;
-
-      }
-
+        
+       }
       .logo {
         display: block;
         order: 1;
         margin-left: 0;
         margin-right: 0;
       }
-
       .hamburger-menu {
         order: 2;
-
-        .menu__toggle,
-        .menu__btn {
+  
+        #menu__toggle , .menu__btn {
           display: none;
         }
-
         .menu__box {
-          position: static;
-          width: auto;
-          padding: 0;
-          box-shadow: none;
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
+          position: static; 
+          width: auto; 
+          padding: 0; 
+          box-shadow: none; 
+          display: flex; 
+          flex-direction: row; 
+          justify-content: flex-start; 
           gap: 34px;
           background: inherit;
-
           .menu__item {
             color: #FFF;
           }
@@ -475,9 +492,10 @@
       a {
         margin: 0;
       }
+
       button {
-        margin-top:40px ;
-        margin-left:  0px;
+        margin-top: 40px;
+        margin-left: 0px;
       }
     }
 
@@ -532,6 +550,7 @@
 
     .footer {
       padding-inline: 165px;
+
       p {
         max-width: 540px;
       }

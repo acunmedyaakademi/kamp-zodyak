@@ -9,6 +9,10 @@ body {
   align-items: center;
   background: #000000;
   padding: 32px 24px 32px 7px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: transform 1s ease;
   /* border-bottom: 1px solid #1B1B1B; */
 
 
@@ -390,6 +394,11 @@ body {
   text-align: center;
   padding-inline: 24px;
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   p {
     font-weight: 400;
     font-size: 15px;
@@ -658,6 +667,7 @@ button:hover {
   .product-also-like {
     display: flex;
     gap: 11px;
+
     img {
       width: 100%;
     }
@@ -880,7 +890,8 @@ button:hover {
     display: flex;
     justify-content: space-between;
   }
-<<<<<<< HEAD:assets/details-css/details-1.css
+
+  
 }
 
 /* Dialog Starts Here */
@@ -1066,6 +1077,4 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
   z-index: 999;
-=======
->>>>>>> origin/atakan:assets/details-css/xx99-mark-two.css
 }

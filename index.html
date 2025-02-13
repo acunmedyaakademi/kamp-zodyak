@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deneme</title>
+  <title>audiophile</title>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script src="assets/js/details.js" defer></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
         </ul>
       </div>
       <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
-      <a href="index.html"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
+      <a class="basketBtn" href="#" ><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
     <div class="hero">
       <div class="hero-text">
@@ -45,11 +46,12 @@
       <img src="assets/products-img/hero-desktop.png" alt="">
       <div class="hero-text">
         <h2>NEW PRODUCT</h2>
-        <h1>XX99 Mark II <br>
-          HeadphoneS</h1>
+        <h1>XX99 MARK II <br>
+          HEADPHONES</h1>
         <p>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
         </p>
-        <a href="/assets/details/xx99-mark-two.html"><button>SEE PRODUCT</button></a>
+          <a href="assets/details/xx99-mark-two.html"><button>SEE PRODUCT</button></a>
+      
       </div>
     </div>
     <div class="categories">
@@ -121,20 +123,25 @@
         </picture>
         <div>
           <h3>Bringing you the <span>best</span> audio gear</h3>
-          <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+          <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones,
+            speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you
+            to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic
+            people who make Audiophile the best place to buy your portable audio equipment.</p>
         </div>
       </div>
     </div>
     <div class="footer">
-      <img src="./assets/logos/top-orange-line.svg" alt="">
-      <a href="/"><img src="./assets/shared/desktop/logo.svg" alt="Company Logo"></a>
-      <div class="navbar">
-        <ul>
-          <a href="/index.html"><li>Home</li></a>
-          <a href="/assets/pages/headphones.html"><li>Headphones</li></a>
-          <a href="/assets/pages/speakers.html"><li>Speakers</li></a>
-          <a href="/assets/pages/earphones.html"><li>Earphones</li></a>
-        </ul>
+      <img src="assets/logos/top-orange-line.svg" alt="">
+      <div class="footer-top">
+        <a href="/"><img src="assets/shared/desktop/logo.svg" alt="Company Logo"></a>
+        <div class="navbar">
+          <ul>
+            <a href="/index.html"><li>Home</li></a>
+            <a href="/assets/pages/headphones.html"><li>Headphones</li></a>
+            <a href="/assets/pages/speakers.html"><li>Speakers</li></a>
+            <a href="/assets/pages/earphones.html"><li>Earphones</li></a>
+          </ul>
+        </div>
       </div>
       <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound
         specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility
@@ -146,13 +153,31 @@
           <span>Copyright 2021. All Rights Reserved</span>
         </div>
         <div class="social-media">
-          <a href="#"><img src="./assets/logos/facebook-logo.svg" alt="facebook icon"></a>
-          <a href="#"><img src="./assets/logos/twitter-logo.svg" alt="twitter icon"></a>
-          <a href="#"><img src="./assets/logos/instagram-logo.svg" alt="instagram icon"></a>
+          <a href="https://www.facebook.com/"><img src="assets/logos/facebook-logo.svg" alt="facebook icon"></a>
+          <a href="https://x.com"><img src="assets/logos/twitter-logo.svg" alt="twitter icon"></a>
+          <a href="https://www.instagram.com/"><img src="assets/logos/instagram-logo.svg" alt="instagram icon"></a>
         </div>
       </div>
     </div>
   </div>
+
+    <!-- dialog part  -->
+    <div class="overlay"></div>
+    <dialog id="myDialog" class="modal-dialog">
+      <div class="dialog-top">
+        <h3>Cart <span class="cardLength"></span></h3>
+        <button class="remove-all" id="removeBtn">Remove All</button>
+      </div>
+      <div class="dialog-product-part">
+  
+      </div>
+      <div class="dialog-bottom">
+        <h6>TOTAL</h6>
+        <span id="total"> </span>
+      </div>
+  <button class="checkout-btn">CHECKOUT</button>
+    </dialog>
+  
 </body>
 
 </html>

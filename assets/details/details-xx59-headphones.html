@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/details-css/details-xx59-headphones.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
+  <script type="module" src="/assets/js/details.js" defer></script>
   <title>Product Details</title>
 </head>
 
@@ -28,23 +29,23 @@
         </ul>
       </div>
       <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
-      <a href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
+      <a href="#" class="basketBtn"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
     <div class="product-detail">
       <a href="/assets/pages/headphones.html">Go Back</a>
       <div class="product-detail-item">
         <img src="/assets/product-xx59-headphones/mobile/image-product.jpg" alt="">
         <div class="product-detail-text">
-          <h3>XX59 <br> Headphones </h3>
+          <h3 id="productName">XX59 <br> Headphones </h3>
           <p>Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.</p>
-          <h5>$ 899</h5>
+          <h5 id="productPrice">$ 899</h5>
           <div class="btn-group">
             <div>
-              <button>-</button>
-              <button>1</button>
-              <button>+</button>
+              <button class="decrease">-</button>
+              <button class="quantity">1</button>
+              <button class="increase">+</button>
             </div>
-            <button>ADD TO CART</button>
+            <button class="addBtn">ADD TO CART</button>
           </div>
         </div>
 
@@ -153,16 +154,32 @@
           <span>Copyright 2021. All Rights Reserved</span>
         </div>
         <div class="social-media">
-          <a href="#"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
-          <a href="#"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
-          <a href="#"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
+          <a href="https://www.facebook.com/"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
+          <a href="https://x.com"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
+          <a href="https://www.instagram.com/"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
         </div>
       </div>
     </div>
 
 
   </div>
+  <!-- dialog part  -->
+  <div class="overlay"></div>
+  <dialog id="myDialog" class="modal-dialog">
+    <div class="dialog-top">
+      <h3>Cart <span class="cardLength"></span></h3>
+      <button class="remove-all" id="removeBtn">Remove All</button>
+    </div>
+    <div class="dialog-product-list">
+      
 
+    </div>
+    <div class="dialog-bottom">
+      <h6>TOTAL</h6>
+      <span id="total"> </span>
+    </div>
+    <a href="../pages/checkout.html"><button class="checkout-btn">CHECKOUT</button></a> 
+  </dialog>
 
 </body>
 

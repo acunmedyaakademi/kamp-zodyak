@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/details-css/xx99-mark-two.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
-  <script src="/assets/js/details.js" defer></script>
+  <script type="module" src="/assets/js/details.js" defer></script>
   <title>Product Details</title>
 </head>
 <body>
@@ -35,7 +35,7 @@
         <picture>
           <source srcset="/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg" media="(min-width: 1024px)">
           <source srcset="/assets/product-xx99-mark-two-headphones/tablet/image-product.jpg" media="(min-width: 525px)">
-          <img src="/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg" alt="">
+          <img id="productPhoto" src="/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg" alt="">
         </picture>        
         <div class="product-detail-text">
           <h4>NEW PRODUCT</h4>
@@ -44,9 +44,9 @@
           <h5 id="productPrice">$ 2,999</h5>
           <div class="btn-group">
             <div>
-              <button>-</button>
-              <button>1</button>
-              <button>+</button>
+              <button class="decrease">-</button>
+              <button class="quantity">1</button>
+              <button class="increase">+</button>
             </div>
             <button class="addBtn">ADD TO CART</button>
           </div>
@@ -147,10 +147,10 @@
       <a href="/"><img src="../shared/desktop/logo.svg" alt="Company Logo"></a>
       <div class="navbar">
         <ul>
-          <li>Home</li>
-          <li>Headphones</li>
-          <li>Speakers</li>
-          <li>Earphones</li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/assets/pages/headphones.html">Headphones</a></li>
+          <li><a href="/assets/pages/speakers.html">Speakers</a></li>
+          <li><a href="/assets/pages/earphones.html">Earphones</a></li>
         </ul>
       </div>
       <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound
@@ -163,9 +163,9 @@
           <span>Copyright 2021. All Rights Reserved</span>
         </div>
         <div class="social-media">
-          <a href="#"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
-          <a href="#"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
-          <a href="#"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
+          <a href="https://www.facebook.com/"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
+          <a href="https://x.com"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
+          <a href="https://www.instagram.com/"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
         </div>
       </div>
     </div>
@@ -173,41 +173,23 @@
 
   </div>
   <!-- dialog part  -->
-<<<<<<< HEAD:assets/details/details-xx99-mark-two.html
+  <div class="overlay"></div>
   <div class="overlay"></div> 
-=======
->>>>>>> origin/atakan:assets/details/xx99-mark-two.html
   <dialog id="myDialog" class="modal-dialog">
     <div class="dialog-top">
-      <h3>Cart <span>(0)</span></h3>
-      <button class="remove-all">Remove All</button>
+      <h3>Cart <span class="cardLength"></span></h3>
+      <button class="remove-all" id="removeBtn">Remove All</button>
     </div>
-    <div class="dialog-product-part">
-      <div class="product-left">
-        <img src="#" alt="">
-      </div>
-      <div class="product-middle" >
-        <h2>Product Name</h2>
-        <h4>Product Price</h4>
-      </div>
-      <div class="product-right">
-        <button class="btn decrement">-</button>
-        <span class="counter">0</span>
-        <button class="btn increment">+</button>
-      </div>
+    <div class="dialog-product-list">
+
     </div>
     <div class="dialog-bottom">
       <h6>TOTAL</h6>
-      <span>$150,36</span>
+      <span id="total"> </span>
     </div>
-    <button class="checkout-btn">CHECKOUT</button>
+    <a href="../pages/checkout.html"><button class="checkout-btn">CHECKOUT</button></a> 
   </dialog>
   
-  
-<<<<<<< HEAD:assets/details/details-xx99-mark-two.html
-=======
 
-
->>>>>>> origin/atakan:assets/details/xx99-mark-two.html
 </body>
 </html>

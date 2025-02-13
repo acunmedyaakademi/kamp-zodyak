@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/details-css/zx7-speaker-details.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
+  <script type="module" src="/assets/js/details.js" defer></script>
   <title>Product Details</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
         </ul>
       </div>
       <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
-      <a href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
+      <a href="#" class="basketBtn" ><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
     <div class="product-detail">
       <a href="/assets/pages/speakers.html">Go Back</a>
@@ -34,20 +35,20 @@
         <picture>
           <source srcset="/assets/product-zx7-speaker/desktop/image-product.jpg" media="(min-width: 1024px)">
           <source srcset="/assets/product-zx7-speaker/tablet/image-product.jpg" media="(min-width: 525px)">
-          <img src="/assets/product-zx7-speaker/mobile/image-product.jpg" alt="">
+          <img id="productPhoto" src="/assets/product-zx7-speaker/mobile/image-product.jpg" alt="">
         </picture>        
         <div class="product-detail-text">
           <h4>NEW PRODUCT</h4>
-          <h3>ZX7 <br>SPEAKER</h3>
+          <h3 id="productName">ZX7 <br>SPEAKER</h3>
           <p>Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.</p>
-          <h5>$ 3,500</h5>
+          <h5 id="productPrice">$ 3,500</h5>
           <div class="btn-group">
             <div>
-              <button>-</button>
-              <button>1</button>
-              <button>+</button>
+              <button class="decrease">-</button>
+              <button class="quantity">1</button>
+              <button class="increase">+</button>
             </div>
-            <button>ADD TO CART</button>
+            <button class="addBtn">ADD TO CART</button>
           </div>
         </div>
 
@@ -162,37 +163,29 @@
           <span>Copyright 2021. All Rights Reserved</span>
         </div>
         <div class="social-media">
-          <a href="#"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
-          <a href="#"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
-          <a href="#"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
+          <a href="https://www.facebook.com/"><img src="../logos/facebook-logo.svg" alt="facebook icon"></a>
+          <a href="https://x.com"><img src="../logos/twitter-logo.svg" alt="twitter icon"></a>
+          <a href="https://www.instagram.com/"><img src="../logos/instagram-logo.svg" alt="instagram icon"></a>
         </div>
       </div>
     </div>
   </div>
   <!-- dialog part  -->
+  <div class="overlay"></div>
   <dialog id="myDialog" class="modal-dialog">
     <div class="dialog-top">
-      <h3>Cart <span>(0)</span></h3>
-      <button>Remove All</button>
+      <h3>Cart <span class="cardLength"></span></h3>
+      <button class="remove-all" id="removeBtn">Remove All</button>
     </div>
-    <div class="dialog-product-part">
-      <div class="product-left">
-        <img src="#" alt="">
-      </div>
-      <div class="product-middle">
-        <h2>Product Name</h2>
-        <h4>Product Price</h4>
-      </div>
-      <div class="product-right">
-        <Button>-</Button> <span>0</span> <button>+</button>
-      </div>
+    <div class="dialog-product-list">
+
     </div>
-    <div class="dailog-bottom">
-      <h6>Total</h6>
-      <span>$150,36</span>
+    <div class="dialog-bottom">
+      <h6>TOTAL</h6>
+      <span id="total"> </span>
     </div>
-    <button>CHECKOUT</button>
-</dialog>
+    <a href="../pages/checkout.html"><button class="checkout-btn">CHECKOUT</button></a> 
+  </dialog>
   
 
 
