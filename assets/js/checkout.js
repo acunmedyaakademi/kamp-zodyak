@@ -104,3 +104,4 @@ dialogCard.innerHTML +=
 function goBack() {
   window.history.back();
 }
+
