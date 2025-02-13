@@ -9,6 +9,10 @@ body {
   align-items: center;
   background: #000000;
   padding: 32px 24px 32px 7px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: transform 1s ease;
   /* border-bottom: 1px solid #1B1B1B; */
 
 
@@ -171,7 +175,7 @@ body {
       font-size: 13px;
       line-height: 17.76px;
       letter-spacing: 1px;
-      background: #D87D4A;
+      background: inherit;
       color: #FFF;
       padding: 15px 30px;
       border: none;
