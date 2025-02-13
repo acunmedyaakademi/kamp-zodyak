@@ -68,10 +68,38 @@ order.innerHTML +=
     </div>
   `
 console.log(card);
+const overlay = document.querySelector(".overlay");
+
+
+document.querySelector('.completed-pay').addEventListener('click', function() {
+  const endDialog = document.querySelector('.endDialog');
+  overlay.style.display = "block";
+  endDialog.showModal();
+})
 
 document.querySelector('.form').addEventListener('click', function(e) {
   e.preventDefault();
 })
+
+
+const dialogCard = document.querySelector('.end-dialog-card');
+dialogCard.innerHTML +=
+`
+  <div class="dialog-card-top">
+    <img src=${card[0].image} alt="Product Image">
+    <div class="dialog-card-text">
+      <h3>${card[0].name}</h3>
+      <h4>${card[0].price}</h4>
+    </div>
+    <span>${card[0].quantity}</span> -->
+  </div>
+  ${card.length > 1 ? `<p>and ${card.length - 1} other item(s)</p>` : ''}
+  <div class="dialog-card-bottom">
+    <h5>GRAND TOTAL</h5>
+    <span class="grand-total">${formattedTotal}</span> -->
+  </div>
+` 
+
 
 function goBack() {
   window.history.back();
