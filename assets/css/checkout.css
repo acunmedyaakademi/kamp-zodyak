@@ -272,6 +272,36 @@
     }
   }
 }
+.order-total {
+  margin-top: 32px;
+  .pay, .total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: #7D7D7D;
+      text-transform: uppercase;
+    }
+    h6 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24.59px;
+      letter-spacing: 0px;
+      color: #000000;
+    }
+
+  }
+  .total {
+    margin-top: 24px;
+    h6 {
+      color: #D87D4A;
+    }
+  }
+}
 .footer {
   background-color: #101010;
   text-align: center;
@@ -368,6 +398,7 @@
       justify-content: space-between;
     }
   }
+
 }
 @media (min-width: 1024px) {
   body {
