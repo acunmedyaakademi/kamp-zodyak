@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/checkout.css"> 
   <link rel="stylesheet" href="/assets/css/reset.css">
+  <script type="module" src="/assets/js/checkout.js"  defer></script>
   <title>Checkout Page</title>
 </head>
 <body>
@@ -28,11 +29,11 @@
       <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
       <a href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
-    <a href="#">Go Back</a>
+    <a href="#" onclick="goBack()">Go Back</a>
     <div class="product-detail">
       <div class="section-checkout">
         <h2>Checkout</h2>
-        <form action="">
+        <form action="" class="form">
           <h3>Billing details</h3>
           <div class="billing-details">
             <label for="">Name</label>
@@ -77,35 +78,12 @@
       </div>
       <div class="checkout-summary">
         <h2>SUMMARY</h2>
-        <div class="checkout-item">
-          <img src="/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg" alt="">
-          <div class="checkout-product-detail">
-            <h3>XX99 MK II</h3>
-            <p>$ 2,999</p>
-          </div>
-          <p>x1</p>
+        <div class="checkout-list">
+
         </div>
-        <div class="checkout-item">
-          <img src="/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg" alt="">
-          <div class="checkout-product-detail">
-            <h3>XX99 MK II</h3>
-            <p>$ 2,999</p>
-          </div>
-          <p>x1</p>
+        <div class="order-total">
+
         </div>
-        <div class="checkout-item">
-          <img src="/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg" alt="">
-          <div class="checkout-product-detail">
-            <h3>XX99 MK II</h3>
-            <p>$ 2,999</p>
-          </div>
-          <p>x1</p>
-        </div>
-        <h6>Total : </h6>
-        <h6>Shipping : </h6>
-        <h6>VAT (included) : </h6>
-        <h6>Grand Total : </h6>
-        <a href="#">Continue & Pay</a>
       </div>
     </div>
     <div class="footer">

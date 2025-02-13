@@ -1,7 +1,8 @@
-let card = [];
+export let card = [];
+
 let selectedQuantity = 1;
 
-function saveCartToLocalStorage () {
+export function saveCartToLocalStorage() {
   localStorage.setItem('card', JSON.stringify(card));
 }
 
@@ -16,6 +17,7 @@ document.querySelector(".increase").addEventListener('click', function() {
   selectedQuantity++;
   document.querySelector(".quantity").innerText = selectedQuantity
 })
+
 document.querySelector(".decrease").addEventListener('click', function() {
   if(selectedQuantity > 1) {
     selectedQuantity--;
@@ -31,7 +33,6 @@ let addBtn = document.querySelector('.addBtn').addEventListener('click', functio
   const productNames = productName.innerText
   const productPrices = productPrice.innerText
   const priceNumber = parseFloat(productPrices.replace('$', '').replace(',', ''));
-  console.log(priceNumber);
 
   loadCartFromLocalStorage();
 
@@ -125,6 +126,9 @@ function updateCard() {
       updateCard()
     })
   })
+
+  console.log(card);
+
 }
 
 
@@ -150,9 +154,10 @@ let basketBtn = document.querySelector('.basketBtn').addEventListener('click', f
   myDialog.showModal();
 })
 
-document.querySelector('.checkout-btn').addEventListener('click', function () {
-  window.location.href = "./pages/checkout.html";
-});
+// document.querySelector('.checkout-btn').addEventListener('click', function () {
+//   window.location.href = "./pages/checkout.html";
+// });
+
 
 loadCartFromLocalStorage();
 updateCard();
