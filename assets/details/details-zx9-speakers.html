@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/details-css/details-zx9-speakers.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
+  <script src="/assets/js/details.js" defer ></script>
   <title>Product Details</title>
 </head>
 <body>
@@ -26,24 +27,24 @@
         </ul>
       </div>
       <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
-      <a href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
+      <a href="#" class="basketBtn"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
     <div class="product-detail">
       <a href="/assets/pages/speakers.html">Go Back</a>
       <div class="product-detail-item">
-        <img src="/assets/product-zx9-speaker/mobile/image-product.jpg" alt="" class="product-detail-img">
+        <img id="productPhoto" src="/assets/product-zx9-speaker/mobile/image-product.jpg" alt="" class="product-detail-img">
         <div class="product-detail-text">
           <h4>NEW PRODUCT</h4>
-          <h3>ZX9 <br> SPEAKER</h3>
+          <h3 id="productName" >ZX9 <br> SPEAKER</h3>
           <p>The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.</p>
-          <h5>$ 2,999</h5>
+          <h5 id="productPrice">$ 2,999</h5>
           <div class="btn-group">
             <div>
-              <button class="minus">-</button>
-              <button class="value">1</button>
-              <button class="plus">+</button>
+              <button class="decrease">-</button>
+              <button class="quantity">1</button>
+              <button class="increase">+</button>
             </div>
-            <button>ADD TO CART</button>
+            <button class="addBtn">ADD TO CART</button>
           </div>
         </div>
 
@@ -160,7 +161,22 @@
 
 
   </div>
+  <!-- dialog part  -->
+  <div class="overlay"></div>
+  <dialog id="myDialog" class="modal-dialog">
+    <div class="dialog-top">
+      <h3>Cart <span class="cardLength"></span></h3>
+      <button class="remove-all" id="removeBtn">Remove All</button>
+    </div>
+    <div class="dialog-product-list">
 
+    </div>
+    <div class="dialog-bottom">
+      <h6>TOTAL</h6>
+      <span id="total"> </span>
+    </div>
+<button class="checkout-btn">CHECKOUT</button>
+  </dialog>
   
 </body>
 </html>

@@ -1,6 +1,27 @@
 let card = [];
-let totalPrice = 0;
+let selectedQuantity = 1;
+
+function saveCartToLocalStorage () {
+  localStorage.setItem('card', JSON.stringify(card));
+}
+
+function loadCartFromLocalStorage() {
+  const storedCart = localStorage.getItem('card')
+  card = storedCart ? JSON.parse(storedCart) : [];
+}
+
 const overlay = document.querySelector(".overlay");
+
+document.querySelector(".increase").addEventListener('click', function() {
+  selectedQuantity++;
+  document.querySelector(".quantity").innerText = selectedQuantity
+})
+document.querySelector(".decrease").addEventListener('click', function() {
+  if(selectedQuantity > 1) {
+    selectedQuantity--;
+    document.querySelector(".quantity").innerText = selectedQuantity
+  }
+})
 
 
 let addBtn = document.querySelector('.addBtn').addEventListener('click', function () {
@@ -12,80 +33,97 @@ let addBtn = document.querySelector('.addBtn').addEventListener('click', functio
   const priceNumber = parseFloat(productPrices.replace('$', '').replace(',', ''));
   console.log(priceNumber);
 
+  loadCartFromLocalStorage();
+
   const productPhotos = productPhoto.src
   const foundedProduct = card.find(x => x.name === productNames)
 
   if (foundedProduct) {
-    foundedProduct.quantity += 1
+    foundedProduct.quantity += selectedQuantity;
   } else {
-    card.push({ name: productNames, price: priceNumber, quantity: 1, image: productPhotos })
+    card.push({ name: productNames, price: priceNumber, quantity: selectedQuantity, image: productPhotos })
   }
 
-  console.log(card)
-  console.log(foundedProduct)
+  saveCartToLocalStorage();
   updateCard();
+
+  selectedQuantity = 1;
+  document.querySelector(".quantity").innerText = selectedQuantity
 })
 
 function updateCard() {
 
   let cardLength = card.length
-  const cardLengthHtml = document.querySelector('.cardLength').innerText = `(${cardLength})`
-  const productList = document.querySelector('.dialog-product-part');
+  document.querySelector('.cardLength').innerText = `(${cardLength})`
 
+  const productList = document.querySelector('.dialog-product-list');
   productList.innerHTML = ""
-  totalPrice=0;
+  let totalPrice = 0;
+
   card.forEach((x,i)=> {
     totalPrice += (x.price * x.quantity)
-    // const formattedTotalPrice = new Intl.NumberFormat('en-US', {
-    //   style: 'currency',
-    //   currency: 'USD',
-    //   maximumFractionDigits: 0
-    // }).format(totalPrice);
-    productList.innerHTML = `
-      <div class="product-left">
-        <img src=${x.image} alt="">
-      </div>
-      <div class="product-middle" >
-        <h2>${x.name}</h2>
-        <h4>${x.price}</h4>
-      </div>
-      <div class="product-right">
-        <button class="btn decrement"  data-id="${i}" >-</button>
-        <span class="counter">${x.quantity}</span>
-        <button class="btn increment" data-id="${i}">+</button>
+    const formattedTotalPrice = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      maximumFractionDigits: 0
+    }).format(totalPrice);
+    productList.innerHTML += `
+      <div class="dialog-product-part">
+        <div class="product-left">
+          <img src=${x.image} alt="">
+        </div>
+        <div class="product-middle" >
+          <h2>${x.name}</h2>
+          <h4>${x.price}</h4>
+        </div>
+        <div class="product-right">
+          <button class="btn decrement"  data-id="${i}" >-</button>
+          <span class="counter">${x.quantity}</span>
+          <button class="btn increment" data-id="${i}">+</button>
+        </div>
       </div>
       `
-    document.getElementById('total').innerText = `${totalPrice} `
+    document.getElementById('total').innerText = `${formattedTotalPrice} `
 
   });
+
+  // Eğer sepet boşsa toplam fiyatı sıfırla
+  if(card.length === 0) {
+    total.innerText = "0"
+  }
+
+
   removeBtn.addEventListener('click', function () {
     card = [];
+    saveCartToLocalStorage();
     updateCard()
+
   })
 
   // quantity decrease/increase
-  document.querySelector('.increment').addEventListener('click', function(){
-    
-  
-      const index = this.getAttribute("data-id");
-      card[index].quantity++
-      updateCard()
-  
+  document.querySelectorAll('.increment').forEach(button => {
+    button.addEventListener('click', function() {
+      const index = this.dataset.id;
+      if(card[index]) {
+        card[index].quantity += 1;
+        saveCartToLocalStorage ()
+        updateCard()
+      }
+    })
   })
 
-  document.querySelector('.decrement').addEventListener('click', function(){
-    
-    card.forEach(x => {
-      const index = this.getAttribute("data-id");
-      if(card[index].quantity > 1){
-        card[index].quantity--
-      } else {
-        card.splice(index,1)
+  document.querySelectorAll('.decrement').forEach(button => {
+    button.addEventListener('click', function() {
+      const index = this.dataset.id;
+      if(card[index].quantity > 1) {
+        card[index].quantity--;
+
+      }else {
+        card.splice(index, 1)
       }
-
-
+      saveCartToLocalStorage ()
       updateCard()
-    });
+    })
   })
 }
 
@@ -112,4 +150,10 @@ let basketBtn = document.querySelector('.basketBtn').addEventListener('click', f
   myDialog.showModal();
 })
 
+document.querySelector('.checkout-btn').addEventListener('click', function () {
+  window.location.href = "./pages/checkout.html";
+});
+
+loadCartFromLocalStorage();
+updateCard();
 
