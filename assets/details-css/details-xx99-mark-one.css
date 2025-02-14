@@ -456,6 +456,178 @@ li {
   }
 }
 
+/* Dialog Starts Here */
+
+.modal-dialog {
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border: none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dialog-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dialog-top h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.dialog-top h3 span {
+  font-size: 16px;
+  color: black;
+  margin-left: 5px;
+}
+
+.dialog-top button {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.dialog-top button:hover {
+  color: #e67b3d;
+}
+
+.dialog-product-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  gap: 12px;
+}
+
+.product-left img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product-middle h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.product-middle h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #888;
+}
+
+.product-right {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1; 
+  border-radius: 6px; 
+  padding: 5px;
+  overflow: hidden; 
+  width: 110px;
+  button{
+    background-color: transparent;
+  }
+}
+
+.btn {
+  width: 35px;
+  height: auto;
+  border: none;
+  background: transparent; /* Şeffaf buton */
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.counter {
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+.dialog-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.dialog-bottom h6 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #666;
+}
+
+.dialog-bottom span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.checkout-btn {
+  background: #e67b3d;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.checkout-btn:hover {
+  background: #d67a3c;
+  transform: scale(1.03);
+}
+
+.checkout-btn:active {
+  transform: scale(0.95);
+}
+
+/* overlay part start here */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+
 
 @media(min-width: 525px) {
   body {
@@ -762,189 +934,19 @@ li {
     display: flex;
     justify-content: space-between;
   }
-}
 
-/* Dialog Starts Here */
-
-.modal-dialog {
-  width: 387px;
-  padding: 18px;
-  border-radius: 8px;
-  background: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  border: none;
-  position: fixed;
-  top: 35%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-}
-
-.dialog-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 31px;
-}
-
-.dialog-top h3 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24.59px;
-  letter-spacing: 1.29px;
-  display: flex;
-  color: rgba(0, 0, 0, 1);
-
-}
-
-.dialog-top button {
-  background: none;
-  border: none;
-  color: rgba(0, 0, 0, 1);
-  cursor: pointer;
-  opacity: 50%;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 0px;
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-thickness: Auto;
-  display: inline;
-  width: 100px;
-
-}
-
-.dialog-top button:hover {
-  color: #e67b3d;
-  opacity: 100%;
-}
-
-.dialog-product-part {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  padding: 15px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.product-left img {
-  width: 64px;
-  height: 64px;
-  object-fit: cover;
-}
-
-.product-middle h2 {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 0px;
-  margin: 0;
-}
-
-.product-middle h4 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 25px;
-  letter-spacing: 0px;
-  opacity: 50%;
-}
-
-.product-right {
-  display: flex;
-  align-items: center;
-  background: rgba(241, 241, 241, 1);
-  width: 96px;
-  height: 32px;
-}
-
-.btn {
-  width: 40px;
-  height: 40px;
-  border: none;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn:hover {
-  background-color: rgb(216, 125, 74);
-}
-
-.btn:active {
-  transform: scale(0.9);
-}
-
-.counter {
-  width: 40px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  background: #f9f9f9;
-  padding: 10px 0;
-}
-
-.dialog-bottom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 32px;
-
-  h6 {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 25px;
-    letter-spacing: 0px;
-    opacity: 50%;
-    color: rgba(0, 0, 0, 1);
+  .modal-dialog {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border: none;
+    position: fixed;
+    top: 30%;
+    left: 87%;
+    transform: translate(-50%, -50%);
   }
-
-  span {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24.59px;
-    letter-spacing: 0px;
-    text-align: center;
-    color: rgba(0, 0, 0, 1);
-  }
+  
 }
 
-.checkout-btn {
-  background-color: rgba(216, 125, 74, 1);
-  color: white;
-  font-size: 13px;
-  font-weight: 700;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: block;
-  width: 90%;
-  margin-inline: auto;
-  margin-top: 32px;
-}
-
-.checkout-btn:hover {
-  transform: scale(1.05);
-}
-
-.checkout-btn:active {
-  transform: scale(0.95);
-}
-
-/* overlay part start here */
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  z-index: 999;
-}
