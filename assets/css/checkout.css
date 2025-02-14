@@ -408,25 +408,147 @@ a {
     padding: 0;
   }
 }
-
 /*end dialog*/
-#endDialog {
-  font-family: 'Manrope';
-  width: 327px;
-  padding: 32px;
-  .end-dialog-icon {
-    width: 64px;
-    height: 64px;
-  }
-  .end-dialog-text {
-    h2 {
-      margin-bottom: 16px;
-    }
-  }
-  .end-dialog-card {
-    width: 263px;
-  }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
 }
+
+.endDialog {
+  width: 290px;
+  border-radius: 8px;
+  border: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: white;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.end-dialog-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.dialogCircle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+}
+
+.dialogArrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+.end-dialog-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.end-dialog-text h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.86px;
+  margin-top: 22px;
+}
+
+.end-dialog-text p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+  color: black;
+  margin: 0;
+}
+
+.end-dialog-card {
+  background: #f1f1f1;
+  border-radius: 8px;
+  margin: 0 0;
+  width: 90px;
+}
+
+.dialog-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+}
+
+.dialog-card-top img {
+  width: 28px;
+  height: 32px;
+}
+
+.dialog-card-text h3, .dialog-card-text h4 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0;
+}
+
+.dialog-card-text h4 {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.dialog-card-bottom {
+  background: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.dialog-card-bottom h5 {
+  opacity: 0.5;
+  margin: 0;
+}
+
+.dialog-card-bottom span {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.backtohomeBtn {
+  display: block;
+  background: #d87d4a;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px auto 0;
+  width: auto;
+}
+
+.backtohomeBtn:hover {
+  background: #b15f36;
+}
+
+
 
 @media (min-width: 525px) {
   .header {
@@ -624,6 +746,147 @@ a {
         }
       }
     }
+
+    /*end dialog*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.endDialog {
+  width: 280px;
+  border-radius: 8px;
+  border: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.end-dialog-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.dialogCircle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+}
+
+.dialogArrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+.end-dialog-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.end-dialog-text h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.86px;
+  margin-top: 22px;
+}
+
+.end-dialog-text p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+  color: black;
+  margin: 0;
+}
+
+.end-dialog-card {
+  background: #f1f1f1;
+  border-radius: 8px;
+  margin: 20px auto;
+  width: 290px;
+  overflow: hidden;
+}
+
+.dialog-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+}
+
+.dialog-card-top img {
+  width: 28px;
+  height: 32px;
+}
+
+.dialog-card-text h3, .dialog-card-text h4 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0;
+}
+
+.dialog-card-text h4 {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.dialog-card-bottom {
+  background: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.dialog-card-bottom h5 {
+  opacity: 0.5;
+  margin: 0;
+}
+
+.dialog-card-bottom span {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.backtohomeBtn {
+  display: block;
+  background: #d87d4a;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px auto 0;
+  width: 265px;
+}
+
+.backtohomeBtn:hover {
+  background: #b15f36;
+}
+
   }
 
   .checkout-summary {
