@@ -99,7 +99,9 @@ dialogCard.innerHTML +=
     <span class="grand-total">${formattedTotal}</span> 
   </div>
 ` 
-
+document.querySelector(".backtohomeBtn").addEventListener("click", function () {
+  localStorage.removeItem("card");
+});
 
 function goBack() {
   window.history.back();
