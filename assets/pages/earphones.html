@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="../">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script src="/assets/js/home.js" defer></script>
   <title>Category - Earphones</title>
 </head>
 
@@ -33,7 +34,7 @@
         </ul>
       </div>
       <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
-      <a href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
+      <a href="#" class="basketBtn"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
     <hr class="custom-hr">
     <div class="header-hero">
@@ -59,7 +60,7 @@
           EARPHONES</h3>
         <p>Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy
           incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.</p>
-        <button><a href="/assets/details/yx1-earphones-detail.html">See Product</a></button>
+        <button><a href="../details/yx1-earphones-detail.html">See Product</a></button>
       </div>
     </div>
     <div class="categories">
@@ -131,6 +132,23 @@
       </div>
     </div>
   </div>
+
+    <!-- dialog part  -->
+    <div class="overlay"></div>
+    <dialog id="myDialog" class="modal-dialog">
+      <div class="dialog-top">
+        <h3>Cart <span class="cardLength"></span></h3>
+        <button class="remove-all" id="removeBtn">Remove All</button>
+      </div>
+      <div class="dialog-product-list">
+  
+      </div>
+      <div class="dialog-bottom">
+        <h6>TOTAL</h6>
+        <span id="total"> </span>
+      </div>
+      <a href="/assets/pages/checkout.html"><button class="checkout-btn">CHECKOUT</button></a>
+    </dialog>
 </body>
 
 </html>

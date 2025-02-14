@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/speakers.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
+  <script src="/assets/js/home.js" defer> </script>
   <title>Category - Speakers</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
           </ul>
         </div>
         <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
-        <a href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
+        <a href="#" class="basketBtn"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
       </div>
       
       <div class="header-hero">
@@ -119,5 +120,21 @@
       </div>
     </div>
   </div>
+
+  <div class="overlay"></div>
+  <dialog id="myDialog" class="modal-dialog">
+    <div class="dialog-top">
+      <h3>Cart <span class="cardLength"></span></h3>
+      <button class="remove-all" id="removeBtn">Remove All</button>
+    </div>
+    <div class="dialog-product-list">
+
+    </div>
+    <div class="dialog-bottom">
+      <h6>TOTAL</h6>
+      <span id="total"> </span>
+    </div>
+    <a href="/assets/pages/checkout.html"><button class="checkout-btn">CHECKOUT</button></a>
+  </dialog>
 </body>
 </html>

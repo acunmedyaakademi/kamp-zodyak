@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <script src="assets/js/details.js" defer></script>
+  <script src="assets/js/home.js" defer></script>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
         </ul>
       </div>
       <a href="/" class="logo"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo"></a>
-      <a class="basketBtn" href="#" ><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
+      <a class="basketBtn" href="#"><img src="/assets/shared/desktop/icon-cart.svg" alt="Basket İcon"></a>
     </div>
     <div class="hero">
       <div class="hero-text">
@@ -50,8 +50,8 @@
           HEADPHONES</h1>
         <p>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
         </p>
-          <a href="assets/details/xx99-mark-two.html"><button>SEE PRODUCT</button></a>
-      
+        <a href="assets/details/xx99-mark-two.html"><button>SEE PRODUCT</button></a>
+
       </div>
     </div>
     <div class="categories">
@@ -91,14 +91,14 @@
         <img src="./assets/products-img/tablet-speakers.png" alt="">
         <div class="product-zx7-text">
           <h3>ZX7 SPEAKER</h3>
-          <a href="assets/details/zx7-speaker-details.html"><button >See Product</button></a>
+          <a href="assets/details/zx7-speaker-details.html"><button>See Product</button></a>
         </div>
       </div>
-      <div class="product-zx7-desktop"> 
+      <div class="product-zx7-desktop">
         <img src="assets/products-img/desktop-speakers.png">
         <div class="product-zx7-text">
           <h3>ZX7 SPEAKER</h3>
-          <button href="assets/details/zx7-speaker-details.html">See Product</button>
+          <a href="assets/details/zx7-speaker-details.html"><button>See Product</button></a>
         </div>
       </div>
       <div class="product-zxd9">
@@ -136,10 +136,18 @@
         <a href="/"><img src="assets/shared/desktop/logo.svg" alt="Company Logo"></a>
         <div class="navbar">
           <ul>
-            <a href="/index.html"><li>Home</li></a>
-            <a href="/assets/pages/headphones.html"><li>Headphones</li></a>
-            <a href="/assets/pages/speakers.html"><li>Speakers</li></a>
-            <a href="/assets/pages/earphones.html"><li>Earphones</li></a>
+            <a href="/index.html">
+              <li>Home</li>
+            </a>
+            <a href="/assets/pages/headphones.html">
+              <li>Headphones</li>
+            </a>
+            <a href="/assets/pages/speakers.html">
+              <li>Speakers</li>
+            </a>
+            <a href="/assets/pages/earphones.html">
+              <li>Earphones</li>
+            </a>
           </ul>
         </div>
       </div>
@@ -161,23 +169,23 @@
     </div>
   </div>
 
-    <!-- dialog part  -->
-    <div class="overlay"></div>
-    <dialog id="myDialog" class="modal-dialog">
-      <div class="dialog-top">
-        <h3>Cart <span class="cardLength"></span></h3>
-        <button class="remove-all" id="removeBtn">Remove All</button>
-      </div>
-      <div class="dialog-product-part">
-  
-      </div>
-      <div class="dialog-bottom">
-        <h6>TOTAL</h6>
-        <span id="total"> </span>
-      </div>
-  <button class="checkout-btn">CHECKOUT</button>
-    </dialog>
-  
+  <!-- dialog part  -->
+  <div class="overlay"></div>
+  <dialog id="myDialog" class="modal-dialog">
+    <div class="dialog-top">
+      <h3>Cart <span class="cardLength"></span></h3>
+      <button class="remove-all" id="removeBtn">Remove All</button>
+    </div>
+    <div class="dialog-product-list">
+
+    </div>
+    <div class="dialog-bottom">
+      <h6>TOTAL</h6>
+      <span id="total"> </span>
+    </div>
+    <a href="/assets/pages/checkout.html"><button class="checkout-btn">CHECKOUT</button></a>
+  </dialog>
+
 </body>
 
 </html>

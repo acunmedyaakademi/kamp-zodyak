@@ -91,12 +91,12 @@ dialogCard.innerHTML +=
       <h3>${card[0].name}</h3>
       <h4>${card[0].price}</h4>
     </div>
-    <span>${card[0].quantity}</span> -->
+    <span>${card[0].quantity}</span>
   </div>
   ${card.length > 1 ? `<p>and ${card.length - 1} other item(s)</p>` : ''}
   <div class="dialog-card-bottom">
     <h5>GRAND TOTAL</h5>
-    <span class="grand-total">${formattedTotal}</span> -->
+    <span class="grand-total">${formattedTotal}</span> 
   </div>
 ` 
 
@@ -104,3 +104,4 @@ dialogCard.innerHTML +=
 function goBack() {
   window.history.back();
 }
+
