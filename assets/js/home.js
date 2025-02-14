@@ -1,7 +1,8 @@
-const dialogPart = document.querySelector(".dialog-product-part");
+const dialogPart = document.querySelector(".dialog-product-list");
 const totalElement = document.querySelector("#total"); // Total gösterecek element
+const removeBtn = document.querySelector(".remove-all"); // Tüm ürünleri kaldır butonu
 
-let data = JSON.parse(localStorage.getItem('card')); // Veriyi JSON olarak parse et
+let data = JSON.parse(localStorage.getItem('card')) || []; // Veriyi JSON olarak parse et, boş ise dizi yap
 
 let basketBtn = document.querySelector('.basketBtn').addEventListener('click', function () {
     myDialog.showModal();
@@ -36,6 +37,13 @@ let basketBtn = document.querySelector('.basketBtn').addEventListener('click', f
 
     // Toplam fiyatı total kısmına ekle
     totalElement.innerText = `$${total.toFixed(2)}`; // Toplamı ekrana yazdır
+
+    removeBtn.addEventListener('click', function () {
+        data = [];
+        localStorage.setItem('card', JSON.stringify(data)); // LocalStorage'ı temizle
+        dialogPart.innerHTML = ''; // HTML'den tüm ürünleri kaldır
+        updateTotal(); // Toplamı güncelle
+    });
 
     // Artı butonuna tıklanınca miktarı artır
     document.querySelectorAll('.increment').forEach(button => {

@@ -475,7 +475,8 @@ body {
   }
 }
 
-/* buradan itibaren dialog css */
+/* Dialog Starts Here */
+
 .modal-dialog {
   width: 350px;
   padding: 20px;
@@ -527,7 +528,6 @@ body {
 .dialog-product-part {
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: space-between;
   padding: 15px 0;
   border-bottom: 1px solid #ddd;
@@ -556,13 +556,12 @@ body {
 .product-right {
   display: flex;
   align-items: center;
-  background: #f1f1f1;
-  border-radius: 6px;
+  background: #f1f1f1; 
+  border-radius: 6px; 
   padding: 5px;
-  overflow: hidden;
+  overflow: hidden; 
   width: 110px;
-
-  button {
+  button{
     background-color: transparent;
   }
 }
@@ -571,8 +570,7 @@ body {
   width: 35px;
   height: auto;
   border: none;
-  background: transparent;
-  /* Şeffaf buton */
+  background: transparent; /* Şeffaf buton */
   color: #333;
   font-size: 18px;
   font-weight: bold;
@@ -580,7 +578,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
 }
 
 
@@ -647,6 +645,7 @@ body {
   display: none;
   z-index: 999;
 }
+
 
 /* media start here */
 /* tablet version start here */
@@ -1102,6 +1101,19 @@ body {
   .footer-top {
     display: flex;
     justify-content: space-between;
+  }
+
+  .modal-dialog {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border: none;
+    position: fixed;
+    top: 20%;
+    left: 87%;
+    transform: translate(-50%, -50%);
   }
 }
 
