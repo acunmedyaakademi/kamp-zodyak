@@ -615,36 +615,6 @@ li {
       }
     }
 
-    /* .footer {
-    img {
-      margin-left: 39px;
-      margin-bottom: 56px;
-    }
-    >a img {
-      margin-left: 39px;
-      margin-bottom: 32px;
-    }
-    .navbar {
-      ul {
-        margin-left: 39px;
-        display: flex;
-        gap: 34px;
-      }
-    }
-    p {
-      margin-left: 30px;
-      margin-right: 40px;
-      margin-bottom: 32px;
-      text-align: left;
-    }
-    .last-footer {
-      margin-inline: 39px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  } */
-
   }
 
   .footer {
