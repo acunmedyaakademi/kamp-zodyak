@@ -663,7 +663,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-right: 15px;
+    .menu__box {
+      height: 100%;
+    }
   }
+
 
   .logo {
     margin-right: auto;

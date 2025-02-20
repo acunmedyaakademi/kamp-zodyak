@@ -638,6 +638,9 @@ li {
     .menu__btn {
       left: 39px;
     }
+    .menu__box {
+      height: 100%;
+    }
 
     padding-inline: 39px;
 
