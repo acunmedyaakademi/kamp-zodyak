@@ -116,3 +116,22 @@ myDialog.addEventListener('click', function (event) {
         console.log(localStorage); // LocalStorage içeriği
     }
 });
+
+
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', function () {
+    const stickyElement = document.querySelector('.header');
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+    // Aşağı kaydırırken gizlemek, yukarı kaydırırken göstermek
+    if (currentScrollTop > lastScrollTop) {
+      // Aşağı kaydırıyorsak gizle
+      stickyElement.style.transform = 'translateY(-100%)';
+    } else {
+      // Yukarı kaydırıyorsak göster
+      stickyElement.style.transform = 'translateY(0)';
+    }
+  
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Sayfa en üste gelirse sıfırlama
+  });

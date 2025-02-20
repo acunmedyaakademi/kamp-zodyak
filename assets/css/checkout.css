@@ -371,8 +371,11 @@ a {
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 2px;
-    color: white;
     padding-bottom: 16px;
+    a {
+    color: white;
+
+    }
 
   }
 
